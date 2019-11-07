@@ -3,7 +3,7 @@ General
 
   **WinDarab** enables you to analyse and display logged data recorded by BOSCH Motronic®.
   ------------------------------------------------------------------------------------------
-  ![](images/General Screenshot.jpg){width="6.730550087489064in" height="3.9163003062117236in"}
+  <img src="images/General Screenshot.jpg" width="6.73" height="3.916">
 
 System Requirements
 -------------------
