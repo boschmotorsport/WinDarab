@@ -8,55 +8,14 @@ General
 System Requirements
 -------------------
 
-+-----------------------+-----------------------+-----------------------+\
-| **Hardware**          | Minimum               | Recommended           |\
-+=======================+=======================+=======================+\
-|                       | -   Pentium 800 MHz   | -   Pentium 1 GHz     |\
-|                       |     processor         |     processor         |\
-|                       |                       |                       |\
-|                       | -   128 MB RAM        | -   over 256 MB RAM   |\
-|                       |                       |                       |\
-|                       | -   800 x 600, 256    | -   1024 x 768,       |\
-|                       |     colors video      |     24-Bit color      |\
-|                       |     resolution        |     video resolution  |\
-|                       |                       |                       |\
-|                       | -   Video card with   | -   Video card with   |\
-|                       |     3D hardware       |     3D hardware       |\
-|                       |     accelerator       |     accelerator       |\
-|                       |     support for       |     support for       |\
-|                       |     OpenGL            |     OpenGL            |\
-|                       |                       |                       |\
-|                       | -   Mouse             | -   3-Button Mouse    |\
-+-----------------------+-----------------------+-----------------------+\
-| **Operating System    | MS Windows XP, Vista, |                       |\
-| and Software**        | 7                     |                       |\
-+-----------------------+-----------------------+-----------------------+\
-| **Known hardware      | During development of |                       |\
-| problems**            | the 3D functions we   |                       |\
-|                       | got several problems  |                       |\
-|                       | with certain graphic  |                       |\
-|                       | chips. Our developers |                       |\
-|                       | tried to work solve   |                       |\
-|                       | these problems but    |                       |\
-|                       | still, we have known  |                       |\
-|                       | problems concerning   |                       |\
-|                       | certain chip sets and |                       |\
-|                       | their drivers:        |                       |\
-|                       |                       |                       |\
-|                       | Chipset S3 Savage     |                       |\
-|                       | IX/VX\                |                       |\
-|                       | The Windows XP        |                       |\
-|                       | drivers are very slow |                       |\
-|                       | if the mouse cursor   |                       |\
-|                       | is inside of a 3D     |                       |\
-|                       | drawing area.\        |                       |\
-|                       | Additionally the      |                       |\
-|                       | driver causes         |                       |\
-|                       | sometimes blue        |                       |\
-|                       | screens.              |                       |\
-|                       |                       |                       |\
-|                       | Our developers made   |                       |\
-|                       | best experience with  |                       |\
-|                       | graphic chips like    |                       |\
-|                       | ATI Radeon or Nvidia. |                       |\
-+-----------------------+-----------------------+-----------------------+\
+| **Hardware** | Minimum | Recommended |
+| -------- | ------- | ----------- |
+| | <ul><li>Pentium 800 MHz processor</li><li>128 MB RAM</li><li>800 x 600, 256 colors video resolution</li><li>Video card with 3D hardware accelerator support for OpenGL</li><li>Mouse</li></ul> | <ul><li>Pentium 1 GHz processor</li><li>over 256 MB RAM</li><li>1024 x 768, 24-Bit color video resolution</li><li>Video card with 3D hardware accelerator support for OpenGL</li><li>3-Button Mouse</li></ul> |
+| **Operating System and Software** | MS Windows XP | MS Windows 10 |
+
+<table>
+<tbody>
+<tr><td><b>Known Hardware Problems</b></td>
+<td>During development of the 3D functions we got several problems with certain graphic chips. Our developers tried to work solve these problems but still, we have known problems concerning certain chip sets and their drivers: <ul><li>Chipset S3 Savage IX/VX</li></ul><br/>The Windows XP drivers are very slow if the mouse cursor is inside of a 3D drawing area.<br/>Additionally the driver causes sometimes blue screens. <br/><br/>Our developers made best experience with graphic chips like ATI Radeon or Nvidia.</td></tr>
+</tbody>
+</table>
