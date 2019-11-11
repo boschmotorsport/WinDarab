@@ -35,7 +35,7 @@ Context Menu
 ## Changing The Style
 <table>
 <tr>
-<td><img src="images/Available Styles.jpg" width="165" height="214"></td>
+<td><img src="images/Available Styles.jpg"></td>
 <td> You can change the sytle of your WinDarab7 by clicking on the *Style* menu in the top right of the window and then choose a style from the drop-down.</td>
 </tr>
 </table>
