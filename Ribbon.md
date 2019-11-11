@@ -41,7 +41,7 @@ Click on the **Open** button
 **Start &rarr; Desktop &rarr; Load (Dropdown)**
 You can also open a recently opened desktop by clicking on the dropdown-button right to the **Load**-button and chose Desktop-file from the list.
 <p align="center">
-<img src="Load Desktop Dropdown.jpg">
+<img src="images/Load Desktop Dropdown.jpg">
 </p>
 
  
@@ -64,11 +64,11 @@ The tool tab **Settings** provides tools for editing, loading and storing of Ana
  
 The Settings tools:
 
-Start &rarr; Settings &rarr; Edit – edit settings of an analysis window or oscilloscope
+**Start &rarr; Settings &rarr; Edit** – edit settings of an analysis window or oscilloscope
 
-Start &rarr; Settings &rarr; Load - load settings of an analysis window, oscilloscope or instrument panel
+**Start &rarr; Settings &rarr; Load** - load settings of an analysis window, oscilloscope or instrument panel
 
-Start &rarr; Settings &rarr; Save - save settings of an analysis window, oscilloscope or instrument panel
+**Start &rarr; Settings &rarr; Save** - save settings of an analysis window, oscilloscope or instrument panel
 
-They are described in the chapters Oscilloscope, Analysis, Telemetry.
+They are described in the chapters **Oscilloscope**, **Analysis**, **Telemetry**.
  
