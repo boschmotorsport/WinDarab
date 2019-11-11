@@ -41,7 +41,7 @@ Context Menu
 </table>
  
 ## License
-If you want to update your WinDarab license, you can do this by clicking on **WinDarab-Orb** -> **Tools** -> **Update license**
+If you want to update your WinDarab license, you can do this by clicking on **WinDarab-Orb** &rarr; **Tools** &rarr; **Update license**
 <p align="center">
 <img src="images/License Menu.jpg">
  </p>
@@ -51,5 +51,5 @@ From here on just follow the instructions. There are two ways to install a new W
 
 2.  You can insert a license number. *For this option you have to be connected to the internet*
 
-To check your license information, just click on **WinDarab-Orb** -> **Tools** -> **Show license information**
+To check your license information, just click on **WinDarab-Orb** &rarr; **Tools** &rarr; **Show license information**
  
