@@ -4,10 +4,10 @@ After starting WinDarab the user interface appears in which the last edited desk
  
 WinDarab offers a structured user interface with several components:
 
-<img src="images/Structured User Interface - Color Highlighted.jpg.jpg" width="807" height="470">
+<img src="images/Structured User Interface - Color Highlighted.jpg" width="807" height="470">
  This is a possible view of composition of the WinDarab components. You can configure the WinDarab components so that the view complies with your operation methods. 
  
-<img src="images/Structured User Interface - Explanations.jpg.jpg" width="807" height="470">
+<img src="images/Structured User Interface - Explanations.jpg" width="807" height="470">
 Further description of the different components for the shown arrangement:
 
 *File Explorer* window displayed upper left contains the list of opened logger data files.
@@ -30,5 +30,5 @@ Context Menu
 
 ## Changing The Style
 
-<img src="images/Available Styles.jpg> You can change the sytle of your WinDarab7 by clicking on the *Style* menu in the top right of the window and then choose a style from the drop-down.
+<img src="images/Available Styles.jpg"> You can change the sytle of your WinDarab7 by clicking on the *Style* menu in the top right of the window and then choose a style from the drop-down.
  
