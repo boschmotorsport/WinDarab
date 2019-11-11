@@ -229,7 +229,7 @@ Click with the left mouse button on **Start &rarr; Dockable &rarr; Colors** to o
 The Colors window provides you the possibility to change the color of a channel, overlay, or something else by drag & drop the color to the corresponding element.
  
 #### Control Bars
-The ribbon Controll Bars tab manages the Outing Bar 
+The ribbon Control Bars tab manages the Outing Bar 
 
 Click with the left mouse button on **Windows &rarr; Control Bars &rarr; Outing Bar** to enable/disable the Outing Bar.
  
@@ -247,7 +247,7 @@ The current visible area is marked yellow; the current cursor position is visual
 * Double-click on a Lap moves the visible area to the size and the position of the selected Lap i.e. zoom to lap.
  
 #### Workbook
-The ribbon Workbook tabl allows you to
+The ribbon Workbook tab allows you to
 
 * Organize your workbooks
 * Insert a new workbook
@@ -255,8 +255,7 @@ The ribbon Workbook tabl allows you to
 * Import / Export a workbook
  
 #### Worksheet
-The ribbon Worksheet tab allows you to
-
+The ribbon Worksheet tab allows you to:
 * Insert a new worksheet
 * Delete a worksheet
 * Rename the worksheet label
@@ -264,7 +263,7 @@ The ribbon Worksheet tab allows you to
 * Import / Export a worksheet
  
 #### Worksheet controls
-<p align="center">
+<p align="left">
 <img src="images/Worksheet Controls.jpg">
 </p>
 
