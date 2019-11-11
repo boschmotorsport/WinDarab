@@ -5,10 +5,12 @@ After starting WinDarab the user interface appears in which the last edited desk
 WinDarab offers a structured user interface with several components:
 
 <img src="images/Structured User Interface - Color Highlighted.jpg" width="807" height="470">
- This is a possible view of composition of the WinDarab components. You can configure the WinDarab components so that the view complies with your operation methods. 
- 
- 
- 
+<br />This is a possible view of composition of the WinDarab components. You can configure the WinDarab components so that the view complies with your operation methods. 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <img src="images/Structured User Interface - Explanations.jpg" width="807" height="470">
 Further description of the different components for the shown arrangement:
 
