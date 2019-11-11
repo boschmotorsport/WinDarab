@@ -162,10 +162,10 @@ The Racetrack window has three different display states. You can select one by c
 <table>
 <tr>
 <td>
-**Dockable window**</td>
+<pre><b>**Dockable window**</b></pre></td>
 <td>Dockable window is the standard option. In this state, your Racetrack window is docked wherever you chose and can be handled like explained in The Racetrack Window.</td>
 </tr><tr> 
-<td>Transparent window</td>
+<td><pre><b>**Transparent window**</b></pre></td>
 <td>The transparent window is activated when you click on it or when you drag the docking racetrack window and drop it somewhere without docking it.
 As soon as the window loses the focus, its background disappears and all you see is the racetrack.
 
@@ -179,13 +179,13 @@ Alternatively, you can move your cursor over the racetrack and hover for one sec
 </td>
 </tr>
 <tr> 
-<td>**Hidden**</td>
+<td><pre><b>**Hidden**</b></pre></td>
 <td>The last option is to hide the Racetrack window completely.
   </td></tr>
 </table>
 
 ###### Hint:
-* You can quickly switch through all the states by clicking on Windows/ Dockable windows/ Racetrack.
+* You can quickly switch through all the states by clicking on Windows &rarr; Dockable windows &rarr; Racetrack.
 </br>
 </br>
 Further Racetrack information can be found at The Racetrack Window.
