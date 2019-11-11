@@ -33,6 +33,10 @@ Context Menu
 - The context menu of an element (window, channel etc.) contains a list of frequently used and useful functions. It is opened by clicking with the right mouse button on the element. In case the element has a zoom function, the context menu is opened by using the *middle mouse button*, or the *left and right mouse buttons*. 
 
 ## Changing The Style
-
-<img src="images/Available Styles.jpg"> You can change the sytle of your WinDarab7 by clicking on the *Style* menu in the top right of the window and then choose a style from the drop-down.
+<table>
+<tr>
+<td><img src="images/Available Styles.jpg"></td>
+<td> You can change the sytle of your WinDarab7 by clicking on the *Style* menu in the top right of the window and then choose a style from the drop-down.</td>
+</tr>
+</table>
  
