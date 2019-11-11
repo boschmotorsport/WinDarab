@@ -7,18 +7,20 @@ WinDarab offers a structured user interface with several components:
 <img src="images/Structured User Interface - Color Highlighted.jpg" width="807" height="470">
  This is a possible view of composition of the WinDarab components. You can configure the WinDarab components so that the view complies with your operation methods. 
  
+ 
+ 
 <img src="images/Structured User Interface - Explanations.jpg" width="807" height="470">
 Further description of the different components for the shown arrangement:
 
-*File Explorer* window displayed upper left contains the list of opened logger data files.
+* *File Explorer* window displayed upper left contains the list of opened logger data files.
 
-*Racetrack* window placed bottom left shows the current racetrack and course segmentation.
+* *Racetrack* window placed bottom left shows the current racetrack and course segmentation.
 
-*Channels* window arranged upper right displays a list of measurement, mathematical, internal or temporary channels according to the users’ choice.
+* *Channels* window arranged upper right displays a list of measurement, mathematical, internal or temporary channels according to the users’ choice.
 
-*Color* window arranged bottom right allows you to pick a color for an element (for instance a channel in an analysis window).
+* *Color* window arranged bottom right allows you to pick a color for an element (for instance a channel in an analysis window).
 
-*Oscilloscope*, *Analysis* Window, *Instrument Panel* resides in the middle of WinDarab and represents data or results of the calculations that are performed.
+* *Oscilloscope*, *Analysis* Window, *Instrument Panel* resides in the middle of WinDarab and represents data or results of the calculations that are performed.
  
 ## Important Tips
 
