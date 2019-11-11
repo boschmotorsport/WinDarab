@@ -16,6 +16,6 @@ WinDarab supports the following devices from Bosch Motorsport.
 - C70
 - VCU
 
-# ECU's
+# ECUs
 - MS6.x
 - MS7.x
