@@ -1,5 +1,6 @@
 ## Glossary
 
+| | |
 |---|---|
 |  Area  |  Refers to the horizontal division of a Oscilloscope in which channel signals are displayed. | 
 | Base Directory | A Base Directory represents a link to a particular folder on the hard drive (--> network). WinDarab saves data in sub-folders within a specified base directory. | 
