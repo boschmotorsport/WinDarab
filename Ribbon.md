@@ -48,7 +48,7 @@ You can also open a recently opened desktop by clicking on the dropdown-button r
 **Start &rarr; Desktop &rarr; Save**
  Open the Save desktop dialog box to save the current desktop.
 <p align="center">
-<img src="images/Save Desktop.jpg>
+<img src="images/Save Desktop.png>
 </p>
 
 1.  Navigate to the folder you want to store the current desktop
