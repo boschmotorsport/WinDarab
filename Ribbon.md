@@ -315,5 +315,5 @@ Click with the left mouse button on Windows/ Desktop layout/ Toggle to toggle be
 ##### Hint/Hidden Gem:
 * When you click on Toggle for the first time, the docks won’t be visible. You can now adjust your workspace. Both workspaces will be saved when you close WinDarab, so they are still the same after the next start.
 * This is commonly used as a 'Setup' layout and an 'Analysis' layout
-** Setup = Get your plots setup the way you like, load data, etc
-** Analysis = remove any extraneous windows and just look at data with maximum screen pixels
+* * Setup = Get your plots setup the way you like, load data, etc
+* * Analysis = remove any extraneous windows and just look at data with maximum screen pixels
