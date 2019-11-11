@@ -2,11 +2,11 @@
 
 WinDarab menu and toolbars are organized in a Ribbon. The Ribbon is designed to help you quickly find commands and perform tasks. The commands are grouped logical together and placed in a tab. Darab Ribbon consists at least the following tabs:
  
-1. ### Start
-2. ### Tools
-3. ### Windows
+1. [Start](#start)
+2. [Tools](#tools)
+3. [Windows](#windows)
 
-### Start
+### [Start](#start)
 The tool tabs on the Start tab depend on which analysis window is currently active. If no analysis window is opened the Start tab contains the following tool tabs (see chapter Analysis and Oscilloscope)
 
 * Desktop
@@ -76,7 +76,7 @@ The Settings tools:
 
 They are described in the chapters **Oscilloscope**, **Analysis**, **Telemetry**.
  
-### Tools
+### [Tools](#tools)
 
 The Tools tab contains:
 
@@ -121,7 +121,7 @@ They are described in detail in the chapters Channel Settings and Settings.
  
 
 
-### Windows
+### [Windows](#windows)
 
 The Windows tab contains the following tool tabs
 
@@ -302,7 +302,7 @@ With the All controls tab, you can change the caption for all your worksheet con
 The Current control tab allows you to adjust the current active control
 
 * Click with the left mouse button on **Windows &rarr; Current control &rarr; Show caption** to change the visibility of your current active control.
-* Click with the left mouse button on **Windows &rarr;/ Current control &rarr; Maximize** to toggle between the normal size and the maximum size of your current active control.
+* Click with the left mouse button on **Windows &rarr; Current control &rarr; Maximize** to toggle between the normal size and the maximum size of your current active control.
 * Click with the left mouse button on **Windows &rarr; Current control &rarr; Close** to close your current active control.
 
 ##### Hint:
