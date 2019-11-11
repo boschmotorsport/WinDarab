@@ -40,3 +40,16 @@ Context Menu
 </tr>
 </table>
  
+## License
+If you want to update your WinDarab license, you can do this by clicking on **WinDarab-Orb** -> **Tools** -> **Update license**
+ 
+<img src="License Menu.jpg">
+ 
+From here on just follow the instructions. There are two ways to install a new WinDarab license. 
+
+1.  You can insert a license file (.lic)
+
+2.  You can insert a license number. *For this option you have to be connected to the internet*
+
+To check your license information, just click on **WinDarab-Orb** -> **Tools** -> **Show license information**
+ 
