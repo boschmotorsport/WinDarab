@@ -1,3 +1,37 @@
+# General
+
+## **WinDarab** enables you to analyse and display logged data recorded by BOSCH Motronic® <!-- omit in toc -->
+
+<img src="images/General Screenshot.jpg" width="807" height="470">
+
+### System Recommendations
+
+- 1920 x 1080 resolution (4k supported)
+- 16 Gb RAM
+- Windows 10
+
+## Copyright / License Agreement
+
+We thank you for choosing a Bosch Motorsport product. Please remember that it is the user’s responsibility to comply with all applicable copyright laws.
+
+```
+Bosch Engineering GmbH
+Motorsport
+Robert-Bosch-Allee 1
+74232 Abstatt
+Germany
+```
+
+All rights reserved.
+
+No part of this program or this manual may--in any manner whatsoever-- be reproduced, modified, shared, translated into another language (including computer languages), or stored electronically without the prior written consent of Robert Bosch GmbH.
+Any unauthorized transmission of the program and/or manual will be prosecuted under criminal law.
+The License Agreement entitles you to work with this software. You may not, however, run this software concurrently on different computers.
+
+## Liability
+
+In no event will Robert Bosch GmbH, or any person involved in the development, production, or distribution of this software be liable to you for any consequential, incidental, or indirect damages including damages for loss of business profits or diminished cost savings.
+
 ## Glossary
 
 | | |
@@ -20,3 +54,28 @@
 |Logged Data File | A Logged Data File contains all data recorded in a vehicle. |
 |Racetrack or Racecourse | A Racetrack or Racecourse is the location where vehicle data recording has taken place. WinDarab assumes that the selected racetrack corresponds to the racetrack where data was actually recorded. |
 |Reader | See CanCard|
+
+## Supported Devices
+
+WinDarab supports the following devices from Bosch Motorsport.
+
+### DDUs
+
+- DDU7
+- DDU8
+- DDU9
+- DDU10
+
+### Data Logger
+
+- C40
+- C40 Plus
+- C55
+- C60
+- C70
+- VCU
+
+### ECUs
+
+- MS6.x
+- MS7.x
