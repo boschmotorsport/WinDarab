@@ -404,8 +404,8 @@ WinDarab follows conventional mathematical rules for evaluating expressions.
 |SegmentMin(\<Channel>)|Calculates the minimum value of a channel within the current lap.|
 |SegmentStdDev(\<channel>)|Calculates the standard deviation of a channel within the current lap.|
 |sigma(\<Channel>; \<reset>)|Calculates the sum of Channel(x(0)) to Channel(x(n)). The optional second parameter defines a reset condition that - when occurring - resets the sum and starts from zero again.
-|ValueAtDist(\<channel>; \<dist> [; \<LapIndex>])|Returns the value of the channel at the given distance. See [New Math Functions](7.7%20Changes.md#new-math-functions)|
-|ValueAtTime(\<channel>; \<time> [; \<LapIndex>])|Returns the value of the channel at the given time. See [New Math Functions](7.7%20Changes.md#new-math-functions)|
+|ValueAtDist(\<channel>; \<dist> [; \<LapIndex>])|Returns the value of the channel at the given distance. See [New Math Functions](7.7%20Changes#new-math-functions)|
+|ValueAtTime(\<channel>; \<time> [; \<LapIndex>])|Returns the value of the channel at the given time. See [New Math Functions](7.7%20Changes#new-math-functions)|
 
 ### IIR Filter Functions
 
