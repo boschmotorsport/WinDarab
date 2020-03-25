@@ -65,9 +65,13 @@ There are two main ways to create setupsheets.
 
 ### Manual Creation
 
-To create a setupsheet click on the Setupsheet icon in the ribbon under Tools->Mathematics.
+To create a setupsheet:
 
-![Setupsheet Icon Location](images/Setupsheet&#32;Open&#32;GUI.jpg)
+- Click on the Setupsheet icon in the ribbon under _Tools &rarr; Mathematics_
+- **Right Click** on the \<filename> in the _File Explorer_
+
+|![Setupsheet Icon Location](images/Setupsheet&#32;Open&#32;GUI.jpg)|Or|![From the File Explorer](images/File&#32;Explorer&#32;Setupsheet.jpg)|
+|---|---|---|
 
 This will open the setupsheet creation and editing interface. Rename your setupsheet as desired then click to add channels.
 
