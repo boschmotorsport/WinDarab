@@ -1,9 +1,13 @@
-## **The Video Window**
+# The Video Window
+
+- [The Video Window](#the-video-window)
+  - [Settings Dialog](#settings-dialog)
+  - [Navigation](#navigation)
 
 The video window allows you to synchronize a video with the data. The video position will then be always aligned with the data position and lets you compare the data to the video.
 
-**WinDarab does not provide video codecs!**  
-In order to use the videos, the corresponding codecs have to be installed on the PC by the user. For example, the free LAV Filters codec pack provides video codecs for the most used formats. 
+**WinDarab does not provide video codecs!**
+In order to use the videos, the corresponding codecs have to be installed on the PC by the user. For example, the free LAV Filters codec pack provides video codecs for the most used formats.
 
 Open the Video Window by **right clicking** in an empty worksheet space and **selecting “Video”** in the appearing **Darab context menu.**
 
@@ -17,7 +21,7 @@ The Video Window allows you to synchronize a video with the displayed data.
 <img src="images/displayed data.jpg">
 </p>
 
-### **Settings Dialog**
+## Settings Dialog
 
 Open a video by pressing F5 or by selecting “Settings …” in the video windows context menu.
 
@@ -30,14 +34,15 @@ The Settings Window shows the used videos and their synchronization parameters.
 |||
 |---|---|
 |**File**| The file name of the selected video
-|**Video-/DataPosition**| The synchronization points in the video and the data. These are the connected time values.
+|**[Video/Data]Position**| The synchronization points in the video and the data. These are the connected time values.
 |**Start/End**| The start and End-Time of the video.
 |||
 You can use more than one video, by using the **Insert** button again. The used videos can be rearranged by the **Up** and **Down** buttons or deleted from the configuration by selecting a video and clicking the **Remove** button. 
 
 Apply the settings with the **OK** button.
 
-### **Navigation**
+## Navigation
+
 The Navigation in the video player is done in the **navigation bar** below the video.
 
 The bar changes according to the locked state. This state can be changed by clicking the **Lock/Unlock** button on the right side.
@@ -59,4 +64,3 @@ You can zoom into the navigation bar by **right clicking** on the **navigation b
 <p align="center">
 <img src="images/nav time.jpg">
 </p>
-
