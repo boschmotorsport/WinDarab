@@ -10,7 +10,7 @@ In WinDarab vehicle setupsheets can be created and maintained to correlate data 
     - [Programmatic Creation](#programmatic-creation)
       - [Notes](#notes)
       - [Example XML Format](#example-xml-format)
-  - [Using Setupsheet values](#using-setupsheet-values)
+  - [Using Setupsheet Channels For Data Analysis](#using-setupsheet-channels-for-data-analysis)
     - [Using Values in Plots and Math](#using-values-in-plots-and-math)
     - [Changing existing Setupsheets](#changing-existing-setupsheets)
   - [Example: Programmatic Setupsheet Creation](#example-programmatic-setupsheet-creation)
@@ -30,8 +30,9 @@ WinDarab is now creating/updating a virtual channel and puts the found outing va
 ## Folder Layout Options
 
 Example Folder Layout:
+
 ```
-C
+C:
 └── Data
     └── 20190325 - Sebring
         ├── Chassis 1
@@ -45,8 +46,9 @@ C
 ```
 
 Alternate Folder Layout:
+
 ```
-C
+C:
 └── Data
     └── 20190325 - Sebring
         └── Setupsheet.xml
@@ -140,31 +142,31 @@ The following attributes are supported:
 <!-- Other way -->
 <SETUPSHEET>
   <CAR Filename="Chassis 3*">
-	  <OUTING Value="107" >
-		  <CHANNEL Name="packer_fl2" Unit="mm" Persistent="True">18.5</CHANNEL>
-		  <CHANNEL Name="packer_fr2" Unit="mm" Persistent="True">18.5</CHANNEL>
-  		<CHANNEL Name="packer_rl2" Unit="mm" Persistent="True">18.5</CHANNEL>
-  		<CHANNEL Name="packer_rr2" Unit="mm" Persistent="True">18.5</CHANNEL>
-  	</OUTING>
-  	<OUTING Value="108" Persistent="True">
-  		<CHANNEL Name="packer_fl2">18.0</CHANNEL>
-  		<CHANNEL Name="packer_fr2">18.0</CHANNEL>
+    <OUTING Value="107" >
+      <CHANNEL Name="packer_fl2" Unit="mm" Persistent="True">18.5</CHANNEL>
+      <CHANNEL Name="packer_fr2" Unit="mm" Persistent="True">18.5</CHANNEL>
+      <CHANNEL Name="packer_rl2" Unit="mm" Persistent="True">18.5</CHANNEL>
+      <CHANNEL Name="packer_rr2" Unit="mm" Persistent="True">18.5</CHANNEL>
+    </OUTING>
+    <OUTING Value="108" Persistent="True">
+      <CHANNEL Name="packer_fl2">18.0</CHANNEL>
+      <CHANNEL Name="packer_fr2">18.0</CHANNEL>
     </OUTING>
   <CAR>
 </SETUPSHEET>
 ```
 
-## Using Setupsheet values
+## Using Setupsheet Channels For Data Analysis
 
-For the Setupsheet values to be used in data analysis two conditions must be met.
+For the Setupsheet values to be used in data analysis two conditions must be met:
 
-The setupsheet file name must match the dataset file name. Wildcards can be insterted with asterisks (*). In the screenshots in the Manual Creation section the Setupsheet name is "*Data 1" for the data files which were named "Sample Data 1"
+1. The setupsheet CAR attribute _Filename_ must match the BMSBIN file name. Wildcards can be insterted with asterisks (\*). Screenshots in the Manual Creation section show the _Filename_ as **"\*Data 1"**, this allows files whose name ends with **"Data 1"** to match with the setupsheet
 
-The setupsheet file must contain the outing number to match the dataset outing number. Outing numbers can be manually edited in the Setupsheet GUI by clicking on an ouring number. For a global Setupsheet or to apply Setupsheet values to all non-specified outings set the outing to 0.
+2. The setupsheet file must contain the outing number to match the dataset outing number. Outing numbers can be manually edited in the Setupsheet GUI by clicking on an outing number. An outing number value of '0' can be used as a 'global' or 'default' value for the setupsheet
 
 ### Using Values in Plots and Math
 
-Setupsheet created channels are Virtual Channels with persistence set with the channel properties. These Virtual Channels can be used the same as all other virtual channels in functions, conditions, and plots.
+Setupsheet channels shown as **"Virtual Channels"**, persistence can be set with the channel properties. These Virtual Channels can be used the same as all other virtual channels in functions, conditions, and plots.
 
 ### Changing existing Setupsheets
 
