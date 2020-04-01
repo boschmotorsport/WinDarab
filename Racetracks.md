@@ -1,16 +1,17 @@
-### Racetracks
-Racetracks are managed by hte **Darab Explorer – Racetrack**.
- 
+# Racetracks
+
+Racetracks are managed by the **Darab Explorer – Racetrack**.
+
 Following processing items are provided by the **Darab Explorer – Racetrack** and described in detail in the next sections:
 
-* Creating a Racetrack
-* Deleting a Racetrack
-* Renaming a Racetrack
-* Editing a Racetrack
-* Selecting Racetrack's Segmentations
+- Creating a Racetrack
+- Deleting a Racetrack
+- Renaming a Racetrack
+- Editing a Racetrack
+- Selecting Racetrack's Segmentations
 
 To open the **Darab Explorer – Racetrack** there are the following methods:
- 
+
 1. From Racetrack Window:
     * Open Racetrack Window if not opened. (“Windows &rarr; Dockable windows &rarr; Racetrack”)
     * Open context menu in the Racetrack Window.
