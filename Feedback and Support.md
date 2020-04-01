@@ -10,7 +10,7 @@ Bosch Motorsport appreciates contructive feedback from WinDarab users. This feed
   - [Submitting The Bug Report](#submitting-the-bug-report)
   - [Bosch Motorsport Commitment to Continuous Improvement](#bosch-motorsport-commitment-to-continuous-improvement)
 
-Bug reports can be created through WinDarab natively or in Windows Task Manager they can then be submitted to Bosch Motorsport for review. Bosch Motorsport is constantly working to improve WinDarab. If possible please use the [latest version](../../Releases) of WinDarab to see if your bug had already been resolved.
+Bug reports can be created through WinDarab natively or in Windows Task Manager they can then be submitted to Bosch Motorsport for review. Bosch Motorsport is constantly working to improve WinDarab. If possible please use the [latest version](../releases) of WinDarab to see if your bug had already been resolved.
 
 ## Report Content
 
