@@ -13,6 +13,7 @@
   - [Comparing Overlays](Comparing%20Overlays)
   - [Special Channels](Special%20Channels)
   - [Math Functions](Math%20Functions)
+  - [Flow Charts](Flowcharts)
   - [Video Window](Video%20Window)
 - [Hotkeys](Hotkeys)
 - [COMApi / BMS2Api](COM%20Api)
