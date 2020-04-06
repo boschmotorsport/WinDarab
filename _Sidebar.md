@@ -8,6 +8,7 @@
   - [File Explorer](File%20Explorer)
   - [Channel Settings](Channel%20Settings)
   - [Feedback & Support](Feedback%20and%20Support)
+  - [Data Logger Import](Data%20Logger%20Import)
 - Analysis
   - [Racetracks](Racetracks)
   - [Setupsheets](Setupsheets)
