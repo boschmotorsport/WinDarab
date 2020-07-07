@@ -7,6 +7,9 @@
     - [DarabRegClean](#darabregclean)
     - [DarabRegister](#darabregister)
     - [DarabUnRegister](#darabunregister)
+  - [COMAPI vs BMS2API](#comapi-vs-bms2api)
+    - [COMAPI](#comapi)
+    - [BMS2API](#bms2api)
   - [Creating COMAPI vs BMS2API](#creating-comapi-vs-bms2api)
   - [Opening Telemetry Data](#opening-telemetry-data)
 
@@ -47,6 +50,28 @@ This script triggers WinDarab to register the version contained in the executing
 ### DarabUnRegister
 
 This script removes the registration of the Darab contained in the executing directory
+
+## COMAPI vs BMS2API
+
+### COMAPI
+
+Using COMAPI allows some control over WinDarab:
+
+- Attaching to or creating new instances of WinDarab Applicatnoi
+- Data Domain (opened files and overlays)
+- Cursor position
+- View range
+- Marked/Tagged range
+
+A user can also compile their application as a *WinDarab Plugin* this allows custom buttons and menus on the WinDarab Ribbon
+
+With the exception of plugins, applications using COMAPI are *out of process communication*
+
+### BMS2API
+
+Using BMS2API allows the user to have *in process communication*.
+
+When using BMS2API, there is no WinDarab Application that is spawned or interacted with. This is prefered if the user needs to access purely the data stored in a WinDarab datafile for external processing
 
 ## Creating COMAPI vs BMS2API
 
