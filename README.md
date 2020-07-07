@@ -2,4 +2,4 @@
 
 Documentation for WinDarab Application
 
-Go to the [Help](https://github.com/boschmotorsport/WinDarab-Documentation/wiki)!
+Go to the [Help](https://github.com/boschmotorsport/WinDarab/wiki)!
