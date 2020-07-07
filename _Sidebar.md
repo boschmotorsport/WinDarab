@@ -3,7 +3,7 @@
 - [New Features in WinDarab 7.7](7.7%20Changes)
 - [General](General)
   - [Program Start](Program-Start)
-  - [Desktop](Desktop.md)
+  - [Desktop](Desktop)
   - [Ribbon](Ribbon)
   - [File Explorer](File%20Explorer)
   - [Channel Settings](Channel%20Settings)
