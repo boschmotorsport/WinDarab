@@ -11,6 +11,9 @@
     - [COMAPI](#comapi)
     - [BMS2API](#bms2api)
   - [Creating COMAPI vs BMS2API](#creating-comapi-vs-bms2api)
+    - [API in C / C++ / C&#35;](#api-in-c--c--c)
+      - [C / C++](#c--c)
+      - [C&#35;](#c)
   - [Opening Telemetry Data](#opening-telemetry-data)
 
 ## API Documentation
@@ -96,6 +99,16 @@ WinDarabApp = actxGetRunningServer('BMS2Api.Application');
 var comType = Type.GetTypeFromProgID("BMS2Api.Application");
 dynamic application = Activator.CreateInstance(comType);
 ```
+
+### API in C / C++ / C&#35;
+
+#### C / C++
+
+Header files are now included to aid in application/plugin development
+
+#### C&#35;
+
+Adding a reference via COM to either the BMS2API or WinDarab (COMAPI) is preferred. This provides static type checking and syntax completion in Visual Studio / Visual Studio Code
 
 ## Opening Telemetry Data
 
