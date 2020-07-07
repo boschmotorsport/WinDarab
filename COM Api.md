@@ -115,9 +115,9 @@ Adding a reference via COM to either the BMS2API or WinDarab (COMAPI) is preferr
 The best practice to open telemetry data is to pass the telemetry URI to the Application.OpenDataFile:
 
 ```C#
-# C# example
-string serverName = "Users Computer"; # the name of the PC hosting WDServer
-string carName = "My Car"; # the name of the 'Car' in WDServer
+// C# example
+string serverName = "Users Computer"; // the name of the PC hosting WDServer
+string carName = "My Car"; // the name of the 'Car' in WDServer
 string path = $"\\.\Telemetry\{serverName}\{carName}";
 
 var app = new WinDarab.Application();
