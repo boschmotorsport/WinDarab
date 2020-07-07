@@ -29,7 +29,7 @@ WinDarabApp = actxGetRunningServer('WinDarab.Application');
 ```
 
 ``` C#
-# COMAPI in C#
+// COMAPI in C#
 var comType = Type.GetTypeFromProgID("WinDarab.Application");
 dynamic application = Activator.CreateInstance(comType);
 ```
@@ -40,7 +40,7 @@ WinDarabApp = actxGetRunningServer('BMS2Api.Application');
 ```
 
 ``` C#
-# BMS2API in C#
+// BMS2API in C#
 var comType = Type.GetTypeFromProgID("BMS2Api.Application");
 dynamic application = Activator.CreateInstance(comType);
 ```
