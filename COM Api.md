@@ -91,7 +91,7 @@ dynamic application = Activator.CreateInstance(comType);
 
 ``` Matlab
 % BMS2API in Matlab
-WinDarabApp = actxGetRunningServer('BMS2Api.Application');
+WinDarabApp = actxserver('BMS2Api.Application');
 ```
 
 ``` C#
