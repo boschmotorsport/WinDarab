@@ -110,6 +110,10 @@ The following attributes are supported:
 ||Max|Default y-axis view maximum|
 ||Persistent|If True, the virtual channel is saved to the file.|
 
+Note:
+
+- To match all files use the _Filename pattern_: '*'
+
 #### Example XML Format
 
 ```
