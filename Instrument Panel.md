@@ -37,7 +37,7 @@ The elements that can be used on an *Instrument Panel* are:
 
 #### Value Display Common Settings
 
-The *Value Display* can be configured with the following settings:
+The *Value Display* can be configured with the following settings:<br>
 ![Value Display Common Settings](images/Instrument%20Panel%20-%20Value%20Display%20Common%20Settings.png)
 
 - Channel: Defines the channel data that the element will present
