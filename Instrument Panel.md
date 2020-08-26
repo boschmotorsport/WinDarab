@@ -68,9 +68,9 @@ Value Displays can be configured to show an enumeration of the channel. This can
 Tutorial:
 
 1. Enter the Tools &rarr; Channels Settings Window
-2. Select the channels of interest (in our case *PBX Output State*) ![Channel Settings Window](images/Instrument%20Panel%20-%20Value%20Display%20Example%202.png)
+2. Select the channels of interest (in our case *PBX Output State*)<br>![Channel Settings Window](images/Instrument%20Panel%20-%20Value%20Display%20Example%202.png)
 3. Change the 'Format' cells to 'Other Formatters -> More'
-4. Create a [channel formatter](./Channel%20Settings#channel-format) for *PBX Output States* ![Channel Formatter Setting](images/Instrument%20Panel%20-%20Value%20Display%20Example%201.png)
+4. Create a [channel formatter](./Channel%20Settings#channel-format) for *PBX Output States*<br>![Channel Formatter Setting](images/Instrument%20Panel%20-%20Value%20Display%20Example%201.png)
 5. Add the channel as a *Value Display* to your instrument panel
 
 Pitfall: The formatter is a global setting, so if you go to an Oscilloscope and change the *Channel Format* back to display a number, your instrument panel will also change back to a number
@@ -83,7 +83,7 @@ Pitfall: The formatter is a global setting, so if you go to an Oscilloscope and 
 
 #### Bar Display Common Settings
 
-The *Bar Display* can be configured with the following settings:
+The *Bar Display* can be configured with the following settings:<br>
 ![Bar Display Common Settings](images/Instrument%20Panel%20-%20Bar%20Display%20Common%20Settings.png)
 
 - Channel: Defines the channel data that the element will present
@@ -103,7 +103,7 @@ The *Bar Display* can be configured with the following settings:
 
 #### Bar Display Alert Settings
 
-The *Bar Display* can be configured to visually alert the user based on the channel valu. 
+The *Bar Display* can be configured to visually alert the user based on the channel value.<br>
 ![Bar Display Alert Settings](images/Instrument%20Panel%20-%20Bar%20Display%20Alert%20Settings.png)
 
 - Hysteresis: the value the channel must change in order to clear a triggered alert
@@ -119,7 +119,7 @@ The *Bar Display* can be configured to visually alert the user based on the chan
 
 #### Round Scale Common Settings
 
-The *Round Scale* can be configured with the following settings:
+The *Round Scale* can be configured with the following settings:<br>
 ![Round Scale Common Settings](images/Instrument%20Panel%20-%20Round%20Scale%20Common%20Settings.png)
 
 - Channel: Defines the channel data that the element will present
@@ -154,7 +154,7 @@ The *Round Scale* can be configured to visually alert the user based on the chan
 
 #### Bit Panel Common Settings
 
-The *Bit Panel* can be configured with the following settings:
+The *Bit Panel* can be configured with the following settings:<br>
 ![Bit Panel Common Settings](images/Instrument%20Panel%20-%20Bit%20Panel%20Common%20Settings.png)
 
 - Channel: Defines the channel data that the element will present
