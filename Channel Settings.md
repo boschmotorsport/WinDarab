@@ -79,6 +79,7 @@ For each channel in the lists the following settings can be defined:
 |---|---|
 |**Description** | A description for the channel can be entered in the text field.|
 |**Format**|Define the display format of numbers.|
+|Other Foratters|These can be used to show text representations of the data. This is useful when the channel value is an error code that corresponds to a text value<br>Use 'Other Formatters' &rarr; Other' to create formatters|
 
 The following formats are provided in the **Format** combo box of each channel:
 
