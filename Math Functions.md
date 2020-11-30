@@ -614,4 +614,4 @@ This generates an output with a non-zero value while the condition is true, in t
 3. Falling Edge: The output is equal to a value of '-1' **for exactly one sample**.
 
 The DetectEvent function can use multiple parameters, you can find an explanation for them here:
-[Detect Event Supports Multiple Overloads](./Math%20Functions#detect-event-supports-multiple-overloads)
+[Detect Event Supports Multiple Overloads](./7.7%20Changes#detect-event-supports-multiple-overloads)
