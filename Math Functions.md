@@ -46,6 +46,7 @@
     - [Example with delta and dt - Derivation of a channel](#example-with-delta-and-dt---derivation-of-a-channel)
     - [Example with HOLD - Filtering measurement errors](#example-with-hold---filtering-measurement-errors)
     - [Examples with sigma, lapsigma, dt, and delta - Calculating “highspeed”-duration for each lap](#examples-with-sigma-lapsigma-dt-and-delta---calculating-highspeed-duration-for-each-lap)
+    - [Example with DetectEvent - Brake Pressure](#example-with-detectevent---brake-pressure)
 
 In WinDarab it is possible to define filters or new channels with the help of math functions.
 WinDarab provides functions and filters that will help you to solve a great number of math and analytical problems.
@@ -596,3 +597,21 @@ There is a faster way to get the same results as well. Use LapSigma for resettin
 ```
 LapSigma(if(speed > 200; dt; 0))
 ```
+
+### Example with DetectEvent - Brake Pressure
+
+A Simple math function:
+```
+DetectEvent({pbrake_fl} > 10)
+```
+
+This generates an output with a non-zero value while the condition is true, in this case the front brake pressure is greater than 10 bar. For one braking event, this looks like:
+
+![Math Function](images/Math%20Function%20-%20Detect%20Event%20Explanation.png)
+
+1. Rising Edge: The output is equal to a value of '1' **for exactly one sample**.
+2. Event True: The output is equal to a value of '2' while the event is true (between the rising and falling edge)
+3. Falling Edge: The output is equal to a value of '-1' **for exactly one sample**.
+
+The DetectEvent function can use multiple parameters, you can find an explanation for them here:
+[Detect Event Supports Multiple Overloads](./Math%20Functions#detect-event-supports-multiple-overloads)
