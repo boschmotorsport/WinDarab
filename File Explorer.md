@@ -15,6 +15,7 @@
     - [File Explorer Window Context Menu](#file-explorer-window-context-menu)
   - [Overlay](#overlay)
     - [Overlay Context Menu](#overlay-context-menu)
+    - [Pin Lap](#pin-lap)
   - [Drag and Drop](#drag-and-drop)
   - [File System Monitoring](#file-system-monitoring)
 
@@ -248,6 +249,21 @@ By default at least one overlay exists in the File Explorer Window. If you open 
 |Pin lap|Pin this lap, scrolling the cursor will stop at the lap end. Can also be used to set a base file for referencing when looking at telemetry on another overlay|
 |Use as x-axis overlay|Select this option to use this overlay as base-overlay for the x-axis.|
 |Use as base for differences|Select this option to use this overlay as the base-overlay for difference-channels (comparing 2+ overlays).|
+
+### Pin Lap
+
+This function can be used to compare one (or more) overlays to a datum lap. This is useful for telemetry.
+
+1. Create an overlay
+2. Open the file containing your 'Datum' or 'Reference' lap
+3. Assign an overlay to the lap to be pinned (Datum/Reference) lap
+4. Right click on the orb &rarr; Select *Pin Lap*
+5. Assign the other overlays to your telemetry source, or files you would like to compare to the *Pinned Lap*
+
+<p align="center">
+<img src="imags/../images/File%20Explorer%20-%20Pin%20Lap.png">
+</p>
+
 
 ## Drag and Drop
 
