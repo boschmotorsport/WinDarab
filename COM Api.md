@@ -15,6 +15,7 @@
       - [C / C++](#c--c)
       - [C&#35;](#c)
   - [Opening Telemetry Data](#opening-telemetry-data)
+  - [Updating Virtual Channels](#updating-virtual-channels)
 
 ## API Documentation
 
@@ -124,4 +125,57 @@ var app = new WinDarab.Application();
 var telemetryFile = app.OpenDataFile(path);
 ```
 
-More to come
+## Updating Virtual Channels
+
+Important points:
+
+- You cannot update the values of a virtual channel
+  - You have to remove the virtual channel and then re-add it.
+- The following sample shows a functional pattern.
+
+```C#
+void Main()
+{
+  // Get a reference to the currently running WinDarab
+  // This is dangerous if you run multiple instances of WinDarab!
+	var app = Application.GetActiveObject();
+	
+  //get the currently selected Datafile
+	var dataFile = app.CurrentDomain.CurrentOverlay.DataFile;
+
+	NewVirtualChannel(dataFile);
+}
+
+
+void NewVirtualChannel(WinDarabNet.DataFile df){
+	var channelName = "my demo channel";
+	
+  // We need to remove the channel if we already made it
+	RemoveChannelIfAlreadyMade(channelName,df);
+  
+  // Nominate a 'base' channel, we only need the Timeline from this channel
+	var baseChannel = df.Channels["speed"];
+
+	var channel = df.NewVirtualChannel();
+	channel.Description = "Hi I'm a demo";
+	channel.Source = "demo";
+	channel.Name = channelName;
+	channel.TimeLine = baseChannel.TimeLine;
+	channel.IsPersistent = true;
+	
+  //create dummy data and fill the array
+	double[] values = new double[baseChannel.TimeLine.TimeStampCount].Select(x => 4.0).ToArray();
+	
+	channel.SetPhysicalValues(0,values);
+	channel.Publish();
+}
+
+void RemoveChannelIfAlreadyMade(string name, WinDarabNet.DataFile df)
+{
+	var channel = df.Channels[name];
+	if (channel != null)
+	{
+		channel.DataFile.RemoveChannel(channel as WinDarabNet.Channel);
+	}
+}
+```
