@@ -1,6 +1,7 @@
 # Navigation
 
 - [New Features in WinDarab 7.7](7.7%20Changes)
+- [New Features in WinDarab 7.8](7.8%20Changes)
 - [General](General)
   - [Program Start](Program-Start)
   - [Desktop](Desktop)
