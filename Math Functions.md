@@ -47,6 +47,8 @@
     - [Example with HOLD - Filtering measurement errors](#example-with-hold---filtering-measurement-errors)
     - [Examples with sigma, lapsigma, dt, and delta - Calculating “highspeed”-duration for each lap](#examples-with-sigma-lapsigma-dt-and-delta---calculating-highspeed-duration-for-each-lap)
     - [Example with DetectEvent - Brake Pressure](#example-with-detectevent---brake-pressure)
+  - [Conditions](#conditions)
+    - [Alternative to Conditions](#alternative-to-conditions)
 
 In WinDarab it is possible to define filters or new channels with the help of math functions.
 WinDarab provides functions and filters that will help you to solve a great number of math and analytical problems.
@@ -615,3 +617,22 @@ This generates an output with a non-zero value while the condition is true, in t
 
 The DetectEvent function can use multiple parameters, you can find an explanation for them here:
 [Detect Event Supports Multiple Overloads](./7.7%20Changes#detect-event-supports-multiple-overloads)
+
+## Conditions
+
+Conditions are a smaller size datatype that is meant to represent a boolean value.
+To access the dialog, from the ribbon: **Tools &rarr; Mathematics &rarr; Conditions**
+
+Conditions are stored on disk in the *Settings.Ini* file. This is located at %WinDarab Install%/Config/Settings.ini.
+
+### Alternative to Conditions
+
+- We recommend **not** using Conditions, as this functionality is nearing end of life and will be removed in a later version.
+
+Throughout WinDarab, any dialog box where a 'Condition' is specified, you can instead select a Math function where and value not equal to 0 is true.
+
+- Alternatively, you can enter a condition manually in any of these dialogs
+
+<p align="center">
+<img src="images/Math Function - Condition Substitution.png">
+</p>

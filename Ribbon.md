@@ -98,7 +98,7 @@ The Mathematics tools:
 **Tools &rarr; Mathematics &rarr; Conditions** – allow you to define conditions to exclude certain data from consideration during data analysis
 * This will be depracated in the future and combined into **functions** with more control
 
-They are described in detail in the chapters Mathematical Channels and Conditions.
+They are described in detail in the chapters [Mathematical Channels and Conditions](Math%20Functions#conditions).
 
 Additional tools:
 
