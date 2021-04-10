@@ -10,7 +10,7 @@
   - [Channel Settings](Channel%20Settings)
   - [Feedback & Support](Feedback%20and%20Support)
   - [Data Logger Import](Data%20Logger%20Import)
-  - [Settings](Program%20Settings)
+  - [Program Settings](Program%20Settings)
 - Windows
   - Oscilloscope
   - [Instrument Panel](Instrument%20Panel)
