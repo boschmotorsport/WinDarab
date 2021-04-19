@@ -13,6 +13,7 @@ In WinDarab vehicle setupsheets can be created and maintained to correlate data 
   - [Using Setupsheet Channels For Data Analysis](#using-setupsheet-channels-for-data-analysis)
     - [Using Values in Plots and Math](#using-values-in-plots-and-math)
     - [Changing existing Setupsheets](#changing-existing-setupsheets)
+  - [Example: Setupsheets & Telemetry](#example-setupsheets--telemetry)
   - [Example: Programmatic Setupsheet Creation](#example-programmatic-setupsheet-creation)
 
 ## What are setupsheets?
@@ -175,6 +176,26 @@ Setupsheet channels shown as **"Virtual Channels"**, persistence can be set with
 ### Changing existing Setupsheets
 
 Setupsheets can be updated by opening the Setupsheet GUI and clicking on values to be changed. Channels and outings can be edited, added, or deleted at any time.
+
+## Example: Setupsheets & Telemetry
+
+As of **WinDarab 7.7.003**, Setupsheets can be used with Telemetry
+
+Prerequisites:
+
+1. Setupsheet file must exist in the **%WinDarab Install Directory% / Config / WDServer** directory
+    - The easiest way to do this is to use *File Explorer &rarr; Setupsheet*
+    - ![From the File Explorer](images/File&#32;Explorer&#32;Setupsheet.jpg)
+2. WinDarab needs to know what Outing and Lap **Special Channels** your telemetry stream is using.
+    - These are *probably* **laptrigger_outcnt_dls** and **laptrigger_lapcurr_dls**
+    - ![Outing Counter Special Channels](images/Special%20Channels%20%20-%20Setupsheet%20Outing.png)
+    - ![Lap Counter Special Channels](images/Special%20Channels%20%20-%20Setupsheet%20Lap.png)
+
+Verify your special channels settings are correct **with your telemetry stream connected** if your File Explorer looks similar to this:
+
+<p align="center">
+<img src="images/Setupsheet%20-%20File%20Explorer%20Correct.png">
+</p>
 
 ## Example: Programmatic Setupsheet Creation
 
