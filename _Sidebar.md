@@ -12,7 +12,7 @@
   - [Data Logger Import](Data%20Logger%20Import)
   - [Program Settings](Program%20Settings)
 - Windows
-  - Oscilloscope
+  - [Oscilloscope](Oscilloscope)
   - [Instrument Panel](Instrument%20Panel)
 - Analysis
   - [Racetracks](Racetracks)
