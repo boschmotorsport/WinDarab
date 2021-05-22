@@ -9,6 +9,7 @@
   - [Files and Folders](#files-and-folders)
     - [Folder Monitoring](#folder-monitoring)
     - [Lap Distance Normalization](#lap-distance-normalization)
+      - [DIST Flag](#dist-flag)
     - [Data Compression](#data-compression)
   - [Miscellaneous](#miscellaneous)
   - [Telemetry](#telemetry)
@@ -100,6 +101,16 @@ WinDarab will, by default, try to normalize the distance of each lap to the curr
 - If you don't want the normalization to occur: select **Never**
 - If you want each and every lap (in/out included) to be normalized: select **Always**
 - If you want a definable deviation: enter it (5% is default)
+
+#### DIST Flag
+
+<p align="center">
+<img src="images/File Explorer - DIST Flag.png"/>
+</p>
+
+This flag will appear in the File Explorer if:
+
+- The lap length does not match the loaded trackmap
 
 ### Data Compression
 
