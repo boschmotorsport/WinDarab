@@ -11,17 +11,18 @@
   - [Feedback & Support](Feedback%20and%20Support)
   - [Data Logger Import](Data%20Logger%20Import)
   - [Program Settings](Program%20Settings)
-- Windows
+- Analysis Windows
   - [Oscilloscope](Oscilloscope)
   - [Instrument Panel](Instrument%20Panel)
-- Analysis
-  - [Racetracks](Racetracks)
-  - [Setupsheets](Setupsheets)
-  - [Comparing Overlays](Comparing%20Overlays)
-  - [Special Channels](Special%20Channels)
-  - [Math Functions](Math%20Functions)
   - [Flow Charts](Flowcharts)
   - [Video Window](Video%20Window)
+  - [Racetracks](Racetracks)
+  - [Math Functions](Math%20Functions)
+- Advanced Use-Cases
+  - [Setupsheets](Setupsheets)
+  - [Data Comparison](Comparing%20Overlays)
+  - [Special Channels](Special%20Channels)
+  - [Pre-Configuring WinDarab](PreConfiguration)
 - [Hotkeys](Hotkeys)
 - [COMApi / BMS2Api](COM%20Api)
 - [Printing](Printing)
