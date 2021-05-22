@@ -49,3 +49,21 @@ Follow these steps to save a Desktop:
 <p align="center">
 <img src="images/save desktop.jpg">
 </p>
+
+## Worksheets
+
+### Copy as image
+
+All worksheets support _Copy as image_.
+<p align="center">
+<img src="images/Oscilloscope Copy As Image.jpg">
+</p>
+
+### Worksheet items can be automatically arranged
+
+- In the “Windows” ribbon category we added the function “Tile controls” to tile all worksheet controls on the current worksheet.
+- The function is also available, if you open the context menu of the worksheet control caption/border.
+
+<p align="center">
+<img src="images/Windows Ribbon Tile Controls.jpg">
+</p>

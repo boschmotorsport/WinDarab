@@ -19,6 +19,7 @@
   - [Racetracks](Racetracks)
   - [Math Functions](Math%20Functions)
 - Advanced Use-Cases
+  - [Alias Channels](Alias%20Channels)
   - [Setupsheets](Setupsheets)
   - [Data Comparison](Comparing%20Overlays)
   - [Special Channels](Special%20Channels)

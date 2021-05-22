@@ -16,6 +16,7 @@
   - [Overlay](#overlay)
     - [Overlay Context Menu](#overlay-context-menu)
     - [Pin Lap](#pin-lap)
+    - [Hide Overlay](#hide-overlay)
   - [Drag and Drop](#drag-and-drop)
   - [File System Monitoring](#file-system-monitoring)
 
@@ -264,6 +265,18 @@ This function can be used to compare one (or more) overlays to a datum lap. This
 <img src="imags/../images/File%20Explorer%20-%20Pin%20Lap.png">
 </p>
 
+### Hide Overlay
+
+- The visualization of an overlay can be disabled (hidden) – while the file keeps opened and attached to the overlay.
+- To hide an overlay use the overlay context menu in the file explorer. An overlay is shown again, if you select the same context menu item or – simly – by clicking into the overlay column to select a lap.
+Alternatively you can use the “Hide” context menu in the oscilloscope (“H” key).
+- What happens, if an overlay is hidden:
+  - The oscilloscope hide all channel of hidden overlays
+  - The trackmap doesn’t show the position of the car.
+  - All analysis windows hide the evaluation results of hidden overlays (except LapAnalysis)
+  - As long as an overlay is hidden most calculations for the attached files are stopped/disabled.
+
+Only “Event rules” and “LapAnalysis” are still evaluated.
 
 ## Drag and Drop
 

@@ -13,6 +13,7 @@
 			- [Output Table](#output-table)
 			- [Output Value](#output-value)
 			- [Output Racetrack](#output-racetrack)
+			- [Flow Chart: output can be virtual channels](#flow-chart-output-can-be-virtual-channels)
 		- [Design page](#design-page)
 			- [Flow objects](#flow-objects)
 			- [Variables](#variables)
@@ -207,6 +208,32 @@ This page contains analyzed or filtered results, calculated during flows run. Th
 |---|---|
 |Insert/Racetrack|During calculations you can insert segment, delete segments or delete all segments in an Output Racetrack.<br>![Example Segmentation](images/Flow&#32;Chart&#32;-&#32;Example&#32;Segment&#32;Output.png)|
 |Local Menu&rarr; Settings<br>F5|If, the object is active (with red frame), you can open and modify its settings. You can open the dialog box using the context menu with pressing right mouse button.|
+
+#### Flow Chart: output can be virtual channels
+
+- Columns in any output table can be enabled to create/populate a virtual channel. The virtual channel can be used in any other view of WinDarab for futher analysis.
+- Peristent channels are also supported for single files (not linked files and not telemetry), but only if the evaluation “Whole file” is selected for the flow chart.
+Note: Be aware that persistent channels are replaced each time the flow is executed!
+- The name of the column is used as the name of the virtual channel and the name of the table is used as the data source.
+Nevertheless to prevent name conflicts we encourage the use of „unique names“. WinDarab will resolve channel name conflicts**  nevertheless depending on the execution order of Flow Charts the name conflicts aren’t always resolved the same way!
+
+Setup of the Output Table:
+
+<p align="center">
+<img src="images/Flow Chart - Virtual Channel Setup.jpg">
+</p>
+
+Example Flow chart (calculate the average engine rpm (nmot) above 6000 rpm):
+
+<p align="center">
+<img src="images/Flow Chart - Flow.jpg">
+</p>
+
+Example Output (oscilloscope and XY Plot):
+<p align="center">
+<img src="images/Flow Chart - Virtual Channel Visualisation.jpg">
+</p>
+
 
 ### Design page
 

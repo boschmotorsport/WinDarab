@@ -142,7 +142,6 @@ The following sections lists Hotkeys supported in WinDarab.
 |Ctrl+B|Switch to 2D bar view|
 |Ctrl+L|Switch to 2D line view|
 |Ctrl+P|Toggle perspective view (3D only)|
-|Y|Open the y-axis dialog|
 |Ctrl+Y|Automatically adjust the y-axis settings|
 |G|Show/hide grid|
 |F|Show/hide header table|
@@ -150,6 +149,9 @@ The following sections lists Hotkeys supported in WinDarab.
 | | |
 |Ctrl+Z|Undo the last zoom|
 |Ctrl+Backspace|Undo the last zoom|
+|X|Toggle between \<auto> and absolute limits|
+|Y|Toggle between \<auto> and absolute limits|
+|Z|Toggle between \<auto> and absolute limits|
  
 ### Distribution
 

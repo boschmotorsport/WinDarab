@@ -16,6 +16,7 @@
       - [C&#35;](#c)
   - [Opening Telemetry Data](#opening-telemetry-data)
   - [Updating Virtual Channels](#updating-virtual-channels)
+  - [COMAPI Can Create New Measurement Files](#comapi-can-create-new-measurement-files)
 
 ## API Documentation
 
@@ -138,44 +139,50 @@ void Main()
 {
   // Get a reference to the currently running WinDarab
   // This is dangerous if you run multiple instances of WinDarab!
-	var app = Application.GetActiveObject();
-	
-  //get the currently selected Datafile
-	var dataFile = app.CurrentDomain.CurrentOverlay.DataFile;
+  var app = Application.GetActiveObject();
 
-	NewVirtualChannel(dataFile);
+  //get the currently selected Datafile
+  var dataFile = app.CurrentDomain.CurrentOverlay.DataFile;
+
+  NewVirtualChannel(dataFile);
 }
 
 
 void NewVirtualChannel(WinDarabNet.DataFile df){
-	var channelName = "my demo channel";
-	
+  var channelName = "my demo channel";
+
   // We need to remove the channel if we already made it
-	RemoveChannelIfAlreadyMade(channelName,df);
+  RemoveChannelIfAlreadyMade(channelName,df);
   
   // Nominate a 'base' channel, we only need the Timeline from this channel
-	var baseChannel = df.Channels["speed"];
+  var baseChannel = df.Channels["speed"];
+ 
+  var channel = df.NewVirtualChannel();
+  channel.Description = "Hi I'm a demo";
+  channel.Source = "demo";
+  channel.Name = channelName;
+  channel.TimeLine = baseChannel.TimeLine;
+  channel.IsPersistent = true;
 
-	var channel = df.NewVirtualChannel();
-	channel.Description = "Hi I'm a demo";
-	channel.Source = "demo";
-	channel.Name = channelName;
-	channel.TimeLine = baseChannel.TimeLine;
-	channel.IsPersistent = true;
-	
   //create dummy data and fill the array
-	double[] values = new double[baseChannel.TimeLine.TimeStampCount].Select(x => 4.0).ToArray();
-	
-	channel.SetPhysicalValues(0,values);
-	channel.Publish();
+  double[] values = new double[baseChannel.TimeLine.TimeStampCount].Select(x => 4.0).ToArray();
+
+  channel.SetPhysicalValues(0,values);
+  channel.Publish();
 }
 
 void RemoveChannelIfAlreadyMade(string name, WinDarabNet.DataFile df)
 {
-	var channel = df.Channels[name];
-	if (channel != null)
-	{
-		channel.DataFile.RemoveChannel(channel as WinDarabNet.Channel);
-	}
+  var channel = df.Channels[name];
+  if (channel != null)
+  {
+    channel.DataFile.RemoveChannel(channel as WinDarabNet.Channel);
+  }
 }
 ```
+
+## COMAPI Can Create New Measurement Files
+
+- A 3rd party application/plugin can use the **UserDataFile** class to create new measurement files with application generated channel data.
+- Files created with the new API are written in WinDarab file format v2 which is supported since WinDarab v7.6.
+- A brief example how to write a file can be found in the BMS2ApiSamples.Net project, see the source in CreateUserDataFile.cs

@@ -15,6 +15,7 @@
     - [Selecting a Channel](#selecting-a-channel)
     - [Selecting a Function](#selecting-a-function)
     - [Compute Function](#compute-function)
+    - [Include Relevant Timestamps](#include-relevant-timestamps)
     - [Computing Example](#computing-example)
     - [Format Tab](#format-tab)
       - [Numerical Format](#numerical-format)
@@ -47,6 +48,11 @@
     - [Example with HOLD - Filtering measurement errors](#example-with-hold---filtering-measurement-errors)
     - [Examples with sigma, lapsigma, dt, and delta - Calculating “highspeed”-duration for each lap](#examples-with-sigma-lapsigma-dt-and-delta---calculating-highspeed-duration-for-each-lap)
     - [Example with DetectEvent - Brake Pressure](#example-with-detectevent---brake-pressure)
+      - [Detect Event Supports Multiple Overloads](#detect-event-supports-multiple-overloads)
+    - [Variables in Math Functions](#variables-in-math-functions)
+    - [Math Functions Support 'NoValue'](#math-functions-support-novalue)
+    - [ValueAtDist](#valueatdist)
+    - [ValueAtTime](#valueattime)
   - [Conditions](#conditions)
     - [Alternative to Conditions](#alternative-to-conditions)
 
@@ -185,6 +191,13 @@ __Compute function with a period of \<x> ms:__
 WinDarab calculates the function at a specified minimum time interval.
 
 - WinDarab is able to perform a calculation only if sample positions are valid. As a result, WinDarab always searches for the sample separated from the previous sample by at least the specified value. It is therefore possible that the intervals vary – but they are always at least as big as the specified value.
+
+### Include Relevant Timestamps
+
+Some math channels work better if relevant timestamps are included to the math function. E.g. functions like “LapSigma” reset their result if a laptrigger is passed. However, values can be incorrect at the laptrigger boundary if this timestamp (exactly at laptrigger) isn’t included in the selected timeline.
+This new option ensures that the timestamps of the laptriggers are included in the math channels timeline and the math channel has a value at these positions.
+
+Note: The used math functions in a math formula control if relevant timestamps exist and which they are (an example is LapSigma which adds the timestamps of the laptriggers to the math channel).
 
 ### Computing Example
 
@@ -407,8 +420,8 @@ WinDarab follows conventional mathematical rules for evaluating expressions.
 |SegmentMin(\<Channel>)|Calculates the minimum value of a channel within the current lap.|
 |SegmentStdDev(\<channel>)|Calculates the standard deviation of a channel within the current lap.|
 |sigma(\<Channel>; \<reset>)|Calculates the sum of Channel(x(0)) to Channel(x(n)). The optional second parameter defines a reset condition that - when occurring - resets the sum and starts from zero again.
-|ValueAtDist(\<channel>; \<dist> [; \<LapIndex>])|Returns the value of the channel at the given distance. See [New Math Functions](7.7%20Changes#new-math-functions)|
-|ValueAtTime(\<channel>; \<time> [; \<LapIndex>])|Returns the value of the channel at the given time. See [New Math Functions](7.7%20Changes#new-math-functions)|
+|ValueAtDist(\<channel>; \<dist> [; \<LapIndex>])|Returns the value of the channel at the given distance.|
+|ValueAtTime(\<channel>; \<time> [; \<LapIndex>])|Returns the value of the channel at the given time.|
 
 ### IIR Filter Functions
 
@@ -506,7 +519,7 @@ Parameters:
 |Chebyshev-II|4 / 8 / 10 / 12|50~100 / 50~200 / 100~200 / 150~200
 |Elliptic|4 / 8 / 10 / 12|50~100 / 50~200 / 100~200 / 150~200|
 |Butterworth|1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 / 12|50~100 / 50~200 / 100~200 / 150~200|
-**The use of the diacritic mark "~" (tilde) between the upper and the lower frequency is mandatory.**
+**The use of the tilde "~" between the upper and the lower frequency is mandatory.**
 
 ### Lookup Function
 
@@ -615,8 +628,160 @@ This generates an output with a non-zero value while the condition is true, in t
 2. Event True: The output is equal to a value of '2' while the event is true (between the rising and falling edge)
 3. Falling Edge: The output is equal to a value of '-1' **for exactly one sample**.
 
-The DetectEvent function can use multiple parameters, you can find an explanation for them here:
-[Detect Event Supports Multiple Overloads](./7.7%20Changes#detect-event-supports-multiple-overloads)
+#### Detect Event Supports Multiple Overloads
+
+- Two additional arguments “BeginDelay” and “EndDelay” were added to DetectEvent. With these arguments DetectEvent delays state changes by the given amount of time.
+- The two arguments are optional and don’t change the signature of the “old” DetectEvent:
+
+```
+DetectEvent(Inactive|Rising|Active|Falling; <BeginCondition>; <BeginDuration>; <BeginDelay>; <EndCondition>; <EndDuration>; <EndDelay>)
+```
+
+- The kind of the arguments are actually controlled by the given number of arguments.
+Hereby the first keyword argument (Inactive/Rising|Active|Falling) is always optional and is NOT counted as an argument!
+
+DetectEvent with 6 Arguments
+
+<pre><code>DetectEvent(
+    Inactive|Rising|Active|Falling;
+    &lt;BeginCondition&gt;; &lt;BeginDuration&gt;; &lt;BeginDelay&gt;;  
+    &lt;EndCondition&gt;; &lt;EndDuration&gt;; &lt;EndDelay&gt;
+)</code></pre>
+
+DetectEvent with 5 Arguments
+
+<pre><code>DetectEvent(
+    Inactive|Rising|Active|Falling;
+    &lt;BeginCondition&gt;; &lt;BeginDuration&gt;; &lt;BeginDelay&gt;;
+    <del>&lt;EndCondition&gt;</del>; &lt;EndDuration&gt;; &lt;EndDelay&gt;
+)</code></pre>
+
+DetectEvent with 4 Arguments
+
+<pre><code>DetectEvent(
+    Inactive|Rising|Active|Falling;
+    &lt;BeginCondition&gt;; &lt;BeginDuration&gt;; <del>&lt;BeginDelay&gt;</del>;
+    &lt;EndCondition&gt;; &lt;EndDuration&gt;; <del>&lt;EndDelay&gt;</del>
+)</code></pre>
+
+DetectEvent with 3 Arguments
+
+<pre><code>DetectEvent(
+    Inactive|Rising|Active|Falling;
+    &lt;BeginCondition&gt;; &lt;BeginDuration&gt;; <del>&lt;BeginDelay&gt;</del>;
+    <del>&lt;EndCondition&gt;</del>; &lt;EndDuration&gt;; <del>&lt;EndDelay&gt;</del>
+)</code></pre>
+
+DetectEvent with 2 Arguments
+
+<pre><code>DetectEvent(
+    Inactive|Rising|Active|Falling;
+    &lt;BeginCondition&gt;; &lt;BeginDuration&gt;; <del>&lt;BeginDelay&gt;; </del>
+    <del>&lt;EndCondition&gt;; &lt;EndDuration&gt;; &lt;EndDelay&gt;</del>
+)</code></pre>
+
+DetectEvent with 1 Arguments
+<pre><code>DetectEvent(
+    Inactive|Rising|Active|Falling;
+    &lt;BeginCondition&gt;; <del>&lt;BeginDuration&gt;; &lt;BeginDelay&gt;; </del>
+    <del>&lt;EndCondition&gt;; &lt;EndDuration&gt;; &lt;EndDelay&gt;</del>
+)</code></pre>
+
+### Variables in Math Functions
+
+Math functions support _var_ & _local_ variables
+
+- _var_ declared variables keep their values between the calculation of one sample to the next. They are initialized once when evaluation the value of the first sample and can be used to “transfer” intermediate results to the next calculation cycle.
+- _local_ declared variables are always initialized when calculating a sample. They can be used to calculate intermediate values – e.g. if an intermediate result is required multiple times in the same expression.
+
+#### Example #1  <!-- omit in toc -->
+
+Calculate the average wheel speed over a file
+
+```
+var wheelSpeedSum
+var wheelSpeedCount
+Local wheelSpeedAve := (vwheel_fl + vwheel_fr) / 2
+wheelSpeedSum := wheelSpeedSum + wheelSpeedAve
+wheelSpeedCount := wheelSpeedCount + 1
+wheelSpeedSum / WheelSpeedCount
+```
+
+#### Example #2  <!-- omit in toc -->
+
+You can even use script blocks within any other function argument. Simple put your expressions within “begin” and “end”
+
+```
+var wheelSpeedSum
+var  wheelSpeedCount
+If (nmot >= 5000;
+  begin
+    Local wheelSpeedAve := (vwheel_fl + vwheel_fr) / 2
+    wheelSpeedSum := wheelSpeedSum + wheelSpeedAve
+    wheelSpeedCount := wheelSpeedCount + 1
+  end; 0)
+wheelSpeedSum / WheelSpeedCount
+```
+
+### Math Functions Support 'NoValue'
+
+- In math channels you can use “NoValue” to supress any output in WinDarab (e.g. the oscilloscope signal is interrupted).
+- A math function “IsValue” was added to checka input value for “NoValue”.
+- Also all analysis windows (should) work correctly, if they meet a “NoValue”.
+- Note: All comparisions with NoValue will returns false (NoValue is internally a NaN double value)
+- Here’s a sample math function:
+
+```
+if (nmot > 6000; nmot; NoValue)
+```
+
+This channel will show only a signal, if nmot is larger than 6000 – anywhere else there’s nothing!
+
+### ValueAtDist
+
+```
+ValueAtDist(<channel>; <dist> [; <LapIndex>])
+```
+
+- If \<LapIndex> is omitted, \<dist> is the absolute distance value within the file.
+
+```
+ValueAtDist(<channel>; <xdist>-10)
+returns the value 10m before the current position.
+```
+
+- If \<LapIndex> is given, the \<dist> argument is a lap distance value.
+
+```
+ValueAtDist(<channel>; 100; LapIndex)
+returns the value at position 100m of the current lap.
+
+ValueAtDist(<channel>; lapdist; LapIndex-1)
+returns the value at the lap position but in the previous lap
+```
+
+### ValueAtTime
+
+```
+ValueAtTime(<channel>; <time> [; <LapIndex>])
+```
+
+- If \<LapIndex> is omitted, \<time> is the absolute time value within the file.
+
+```
+ValueAtTime(<channel>; <xtime>-10)
+returns the value 10sec before the current position.
+```
+
+- If \<LapIndex> is given, the \<time> argument is a lap time value.
+
+```
+ValueAtDist(<channel>; 10; LapIndex)
+returns the value at position 10sec of the current lap.
+
+ValueAtDist(<channel>; laptime; LapIndex-1)
+returns the value at the same laptime position but in the previous lap
+```
 
 ## Conditions
 

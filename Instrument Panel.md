@@ -2,16 +2,9 @@
 
 The *Instrument Panel* is a window used to visualize data at the current cursor position.
 
-## Settings
-
-Instrument Panel settings can be edited/loaded/saved using the **F5/F6/F7** function keys (like many other windows)
-
-## Elements
-
-The elements that can be used on an *Instrument Panel* are:
-
 - [Instrument Panel](#instrument-panel)
   - [Settings](#settings)
+  - [Element Selection/Placement](#element-selectionplacement)
   - [Elements](#elements)
     - [Value Display](#value-display)
       - [Value Display Common Settings](#value-display-common-settings)
@@ -30,6 +23,28 @@ The elements that can be used on an *Instrument Panel* are:
       - [Bit Panel Style Settings](#bit-panel-style-settings)
       - [Bit Panel Alert Settings](#bit-panel-alert-settings)
       - [Advanced Bit Panel Usage - PBX Output State](#advanced-bit-panel-usage---pbx-output-state)
+
+## Settings
+
+Instrument Panel settings can be edited/loaded/saved using the **F5/F6/F7** function keys (like many other windows)
+
+## Element Selection/Placement
+
+- Instrument panel allow to select multiple gauges by pressing the **Ctrl + Left Click** or using a rubberband.
+- The location and size of all selected gauges can be adjusted in a single step.
+- Copy and paste of the selected gauges is supported
+- The layout grid is removed. Now the borders of the gauges act as magnetic lines making it easy to align/adjust gauges.
+- If multiple gauges are selected, the arrow keys can be used to move the gauges by pixel (without snapping to the magnetic lines). Additionally the arrow keys can be used with Shift to align all gauges to the top, left, bottom or right border, together with Ctrl the size can be adjusted (**Ctrl+Right Arrow**, **Ctrl+Down Arrow**) or aligned and sized (**Ctrl+Left Arrow**, **Ctrl+Up Arrow**)
+
+## Elements
+
+The elements that can be used on an *Instrument Panel* are:
+
+<!-- no toc -->
+- [Value Display](#value-display)
+- [Bar Display](#bar-display)
+- [Round Scale](#round-scale)
+- [Bit Panel](#bit-panel)
 
 ### Value Display
 

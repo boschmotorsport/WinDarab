@@ -6,6 +6,7 @@
     - [Channel Visualisation](#channel-visualisation)
   - [Importing Descriptions](#importing-descriptions)
   - [Channel Colors](#channel-colors)
+    - [New Colors](#new-colors)
 
 You are able to make basic settings for each channel in WinDarab.  
 <p align="center">
@@ -134,3 +135,26 @@ Select **“Tools&rarr; Settings&rarr; Program”** to open the Channel Colors D
 This dialog allows you to assign different colors for different overlays to specific channels. The number of overlay-columns in the dialog equals the number of overlays in the File Explorer.
 
 Automatic is recommended. When left in this mode, WinDarab will automatically choose a color for the channel that has a good contrast to the selected color scheme.
+
+### New Colors
+
+Oscilloscopes and XY plots can get very busy when multiple signals are added. We have added 20 distinct colors to help.
+
+<p align="center">
+<img src="images/Color Palette Distinct Colors.jpg">
+</p>
+
+### Customize  <!-- omit in toc -->
+
+These colors can be customized in setting.ini
+
+```
+[Options]
+DisinctColors= 0xe6194b, 0x3cb44b, 0xffe119, 0x4363d8, 0xf58231, 0x911eb4, 0x46f0f0, 0xf032e6, 0xbcf60c, 0xfabebe, 0x008080, 0xe6beff, 0x9a6324, 0xfffac8, 0x800000, 0xaaffc3, 0x808000, 0xffd8b1, 0x000075, 0x808080, 0xffffff, 0x000000__
+```
+
+Here’s an alternative set of colors:
+
+```
+DistinctColors=0xa6cee3, 0x1f78b4, 0xb2df8a, 0x33a02c, 0xfb9a99, 0xe31a1c, 0xfdbf6f, 0xff7f00, 0xcab2d6, 0x6a3d9a, 0x8dd3c7, 0xffffb3, 0xbebada, 0xfb8072, 0x80b1d3, 0xfdb462, 0xb3de69, 0xfccde5, 0xd9d9d9, 0xbc80bd, 0xffffff, 0x000000
+```

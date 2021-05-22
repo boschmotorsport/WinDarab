@@ -14,7 +14,6 @@ In WinDarab vehicle setupsheets can be created and maintained to correlate data 
     - [Using Values in Plots and Math](#using-values-in-plots-and-math)
     - [Changing existing Setupsheets](#changing-existing-setupsheets)
   - [Example: Setupsheets & Telemetry](#example-setupsheets--telemetry)
-  - [Example: Programmatic Setupsheet Creation](#example-programmatic-setupsheet-creation)
 
 ## What are setupsheets?
 
@@ -196,7 +195,3 @@ Verify your special channels settings are correct **with your telemetry stream c
 <p align="center">
 <img src="images/Setupsheet%20-%20File%20Explorer%20Correct.png">
 </p>
-
-## Example: Programmatic Setupsheet Creation
-
-Coming Soon
