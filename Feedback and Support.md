@@ -62,7 +62,11 @@ procdump -e -ma -w darab.exe
 
 ## Submitting The Bug Report
 
-Send the three parts of the crashdump to your Bosch Motorsport support dealer or person via the method of your choosing. The dealer or Bosch Motorsport representative will follow up if there is additional information requested.
+Send the [three parts](#report-content) of the crashdump to your Bosch Motorsport support representative via the method of your choosing. Recommended methods:
+
+- Google Drive
+- Dropbox
+- Bosch Ad-Hoc Data Exchange Request
 
 ## Bosch Motorsport Commitment to Continuous Improvement
 
