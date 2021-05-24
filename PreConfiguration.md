@@ -46,7 +46,7 @@ The above could be expanded when looking at data from multiple projects for exam
 
 Recommended Steps:
 
-1. SCreate *Branch A* and copy files related to your project.
+1. Create *Branch A* and copy files related to your project.
 2. Commit this branch
 3. Create a new branch *Branch B* with files related to project B
 4. Commit this branch
