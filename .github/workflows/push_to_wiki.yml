@@ -6,8 +6,8 @@ on:
       # Trigger only when wiki directory changes
       - 'wiki/**'
     branches:
-      # And only on main branch
-      - main
+      # And only on master branch
+      - master
 
 jobs:
   build:
