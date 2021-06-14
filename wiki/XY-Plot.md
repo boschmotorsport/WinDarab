@@ -144,7 +144,7 @@ Follow these steps to plot GPS data with a maps background:
     1. Select the data file with the gps data for the Overlay  
     2. Select the longitude GPS data channel for the X-Axis  
     3. Select the Latitude GPS data channel for the Y-Axis  
-![GPS Plot](images/GPSPlot.jpg)  
+![GPS Plot](images/GPSPlot.JPG)  
 3. Screen capture a map of the track  
     Here is a possible method for obtaining the screen capture:  
     1. Zoom all of the way out on the plot of the GPS data in WinDarab  
@@ -153,15 +153,15 @@ Follow these steps to plot GPS data with a maps background:
     4. Open the search box (press the magnifying glass on the left side of the screen)  
         ![Search Box](images/GoogleEarth-Search.jpg)  
     5. Enter the coordinates of the bottom leftmost point in the search bar  
-        ![Search Coordinates](images/GoogleEarth-Coordinates.jpg)  
+        ![Search Coordinates](images/GoogleEarth-Coordinates.JPG)  
     6. Click __Add to project__ in the pop-up to save the mark  
-        ![Add to Project](images/GoogleEarth-AddToProject.jpg)  
+        ![Add to Project](images/GoogleEarth-AddToProject.JPG)  
     7. Choose the name and project that you want to save the marker as, and click __Save__  
         ![Save](images/GoogleEarth-Save.jpg)  
     8. Repeat steps _4._ through _7._ for the coordinates of the top rightmost point. Once completed, there should be two marks on the map, marking the location of the corners of the GPS data plot.
-        ![Marked Map](images/GoogleEarth-Marked.jpg)  
+        ![Marked Map](images/GoogleEarth-Marked.JPG)  
     9. If needed, press the 2D icon, as well as the compass icon in the bottom right of the screen to make a straight, top-down view.  
-        ![2D View](images/GoogleEarth-2D.jpg)  
+        ![2D View](images/GoogleEarth-2D.JPG)  
     10. If there are other locations/businesses marked in the view, click on the map style icon on the left side of the screen  
         ![2D View](images/GoogleEarth-MapStyle.jpg)  
     and then choose Clean for the map style  
