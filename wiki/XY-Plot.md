@@ -7,6 +7,7 @@
     -[Components and Regression Lines](#components-and-regression-lines)
     -[Working with the XY-Plot Window](#working-with-the-xy-plot-window)
         -[Basic](#basic)
+    -[Plotting GPS with a Maps Background](#plotting-gps-with-a-maps-background)
 
 In a (x, y) graph coordinates are calculated for a pair of values (x, y) in two channels  (x- and y-axis).
 
@@ -23,7 +24,7 @@ Drag __"Start/Worksheet controls/x-y-plot"__ into your workspace to open the (x,
 ![Add XY Plot](images/XY&#32;Plot&#32;-&#32;Add.jpg)
 
 __Middle Mouse Click (Left Button + Right Button)__
-Clicking your middle mouse button (or  left + right mouse buttons) displays a local menu with options.
+Clicking your middle mouse button (or  left + right mouse buttons) displays a local menu (context menu) with options.
 
 __Calculations__
 Calculations are started after changes in the settings are made, or after “Update View” from the menu was clicked.
@@ -37,10 +38,10 @@ For online files calculations are started automatically after changing the range
 
 A dialog box with settings appears automatically when you open the (x, y)-Plot Window for the first time. Closing the window will save the settings. The next time the window is opened this dialog will not appear again. Instead the saved settings will be loaded. 
 
-If you want to modify these settings or carry out a new calculation you can re-open the dialog box using the menu item __“Start/ Settings/ Edit”__ or by clicking __“Settings…”__ in the context menu.
+If you want to modify these settings or carry out a new calculation you can re-open the dialog box using the menu item __“Start/View Settings/ Edit”__ or by clicking __“Settings…”__ in the context menu.
  ![XY Plot Settings](images/XY&#32;Plot&#32;-&#32;Settings.jpg)
 
-You can also press the __F5__ key to open the __“Load Settings”__ dialog box.
+You can also press the __F5__ key to open the __“Settings”__ dialog box.
 
 
 ### Global Options Tab
@@ -62,7 +63,7 @@ Shows the Offset and Gain of all the lines (regression lines and user lines) and
 
 ### Display Tab
 
-This tab is used to show all the existing plots, to manage them as well as setting the data source and the Condition, that is applies to the data from the data source. 
+This tab is used to show all the existing plots, to manage them as well as setting the data source and the condition, that is applies to the data from the data source. 
 ![Display Tab](images/XY&#32;Plot&#32;-&#32;Display.jpg)
 
 #### Data Source
@@ -73,7 +74,7 @@ Choose the data that is analyzed by the (x, y)-Plot. The combo box offers a wide
 
 In this list, you see all the (x, y)-Plots that are currently defined. Every item shows the essential parameters selected for this particular plot.
 
-It shows the selected overlay, the channels for the x- and y-axis, the plot mode, the color/colorscale for this plot, the marker style and the selected axes.
+It shows the selected overlay, the channels for the x- and y-axis, the plot mode, the color/color scale for this plot, the marker style and the selected axes.
 
 You can manage these configurations with the buttons under this list.
 
@@ -84,7 +85,7 @@ If two or more plots have the same x- or y-axis the topmost plot defines the sho
 
 ### Plot Edit Dialog
 
-This dialog is shown when you mark an existing (x, y)-Plot and press Modify or by adding a new (x, y)-Plot to the list (Add-Button), or duplicating an existing one. 
+This dialog is shown when you mark an existing (x, y)-Plot and press Modify or by adding a new (x, y)-Plot to the list (Add-Button), or duplicating an existing one (in the Display Tab). 
 
 ![Plot Edit Dialog](images/XY&#32;Plot&#32;-&#32;PlotEdit.jpg)
 
@@ -122,7 +123,7 @@ With this option, you have to choose a channel and its range. The plot-sample ar
 
 #### Appearance
 
-Choose the appearance of the plot-samples within the plot-window. First select the form of each sample. You can choose between a various size of dots, a cross or circle. The last option connects the dots according to the order on the timeline.
+Choose the appearance of the plot-samples within the plot-window. First select the form of each sample. You can choose between a various size of dots, a cross or circle.
 In addition to that, you need to select a color for the samples. Using the simple plot, just select a color that is used for all the samples.
 In frequency- or channel-mode, you have to select multiple colors for various values.
 
@@ -135,7 +136,7 @@ You can also use predefined color scale settings by using the button on the righ
 
 You can select a predefined condition or write a new one directly into the field. The data is filtered by the condition before it is being analyzed by the (x, y)-Plot. 
 
-#### Visuals
+#### Cloud detection adn polynomial fitting
 
 In this section you can configure the regression lines, components and user lines.
 Select the sensitivity and the maximal component-count to regulate the outcome.
@@ -169,41 +170,41 @@ Press __Shift-key__ and then **_drag a box_** with pressed right mouse button. T
 The picture will be __zoomed in__ by a factor of 2 so the cross dot will stay unmoved.
 To zoom in:
 * Double Click Left
-* Go to __Start/Display/Zoom in__
 * __Context Menu/Zoom in__
+* Go to __Start/Display/Zoom in__
 ![Zoom In](images/Zoom&#32;In.jpg)
 
 #### Zoom out
 The picture will be __zoomed out__ by a factor of 2 so the cross dot will stay unmoved.
 To zoom out:
 * Double Click Right
-* Go to __Start/Display/Zoom out__
 * __Context Menu/Zoom out__
+* Go to __Start/Display/Zoom out__
 ![Zoom In](images/Zoom&#32;Out.jpg)
 
 #### Show All
 To show all dots:
 * Press __A__
-* Go to __Start/Display/Show All__
 * __Context Menu/Show All__
+* Go to __Start/Display/Show All__
 ![Show All](images/Show&#32;All.jpg)
 
 #### Additional Elements
 
-There are components, regression lines, user lines and a InfoBox with the information about the files and lines. They are additional to the base picture. Additional elements can be hidden and shown from the menu or the toolbar.
+There are components, regression lines, user lines and an InfoBox with the information about the files and lines. They are additional to the base picture. Additional elements can be hidden and shown from the menu or the toolbar.
 
 ##### Show Info
 The InfoBox contains information about files and user lines. Information for every file consists from files ranges, correlation of the range and file regression lines. Information about file lines can be shown or hidden by using +/- in front of the file name. Every line has offset, gain and correlation.
 To show info:
-* Press __F11__
-* Go to __Start/Display/ShowInfo__
+* Press __i__
 * __Context Menu/ShowInfo__
+* Go to __Start/Display/Show polynomial coefficients__
 ![Show Info](images/ShowInfo.jpg)
 
-##### Show Scale
+##### Show Color Scale
 Displays or hides the color scale for the selected (x,y) plot in the (x,y) window. This is only available in frequency or channel mode.
 To show scale:
-* Press the __S__
+* Press the __s__
 * Go to __Start/Display/ShowScale__
 ![Show Scale](images/Show&#32;Scale.jpg)
 
@@ -214,7 +215,7 @@ To use a background image:
 ![Use Image](images/Use&#32;Image.jpg)
 
 ##### Transparency
-Shows/Hides the selected (x,y) plot __(press H)__. You can adjust the transparency of the (x,y) plot by clicking on the drop down button and change the slider position or by using hotkeys __(0-9)__ to set the transparency __(0% - 90%)__.
+Shows/Hides the selected (x,y) plot __(press h)__. You can adjust the transparency of the (x,y) plot by clicking on the drop down button and change the slider position or by using hotkeys __(0-9)__ to set the transparency __(0% - 90%)__.
 To access the transparency slider:
 * Go to __Start/Visibility/Transparency__
 ![Transparency](images/Transparency.jpg)
@@ -236,13 +237,13 @@ To show the regression lines:
 ##### Show/Enable User Lines
 User lines are free placeable lines that are inserted into a (x,y) plot by the user.  
 To show/enable user lines:
-* Press __U__
-* __Context Menu/Insert Line__
+* Press __u__
+* __Context Menu/User Lines__
 * Go to __Start_User Lines/Show__
 ![Show User Lines](images/Show&#32;User-Lines.jpg)
 
 ##### Add User Lines
-Adding a new user line is done by pressing Insert-key or “Insert line” from the menu. To add a user line, user lines must be shown. The inserted line is going through the (0, 0) and the cross point. A user line can be dragged using two small rectangles on the line. 
+Adding a new user line is done by pressing Insert-key or “Insert line” from the menu. To add a user line, user lines must be showing. The inserted line is going through the (0, 0) and the cross point. A user line can be dragged using two small rectangles on the line. 
 To add a user line:
 * Press __insert__
 * __Context Menu/Insert Line__
@@ -260,9 +261,14 @@ To delete a selected user line:
 * Go to __Start/User Lines/Remove__
 ![Delete User Line](images/Delet&#32;User-Line.jpg)
 
-##### Axes
-The axes of (x, y)-Plot have their own context menus. Using it you can: 
-* change the position of channel names or units
-* hide or show the channel names or units
-* hide or show the current values
-* change the style of the numbers in axis: all numbers have the same style
+## Plotting GPS with a Maps Background
+
+GPS data can be plotted, with a maps background, using an XY plot.
+Follow these steps to plot GPS data with a maps background:
+1. Create a new XY Plot
+2. Create a new plot
+  a. Select the data file with the gps data for the Overlay
+  b. Select the longitude GPS data channel for the X-Axis
+  c. Select the Latitude GPS data channel for the Y-Axis
+![GPS Plot](images/GPSPlot.jpg)
+
