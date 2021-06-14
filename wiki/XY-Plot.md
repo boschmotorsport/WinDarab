@@ -168,9 +168,9 @@ Follow these steps to plot GPS data with a maps background:
       ![Clean Style](images/GoogleEarth-Clean.jpg)  
     11. Use the windows _Snipping Tool_ to take a screen capture from one marker to the other, and save the capture as a jpeg
       ![Screen Capture](images/GoogleEarth-Capture.jpg)  
-4.  In the WinDarab GPS data plot, set the capture of the map as the [background](#background-image)  
+4.  In the WinDarab GPS data plot, set the capture of the map as the background
       ![GPS Map](images/GPSMap.jpg)  
-    Note: If the GPS data doesn't show up well on map, the [size and color](#appearance) of the points can be adjusted
+    Note: If the GPS data doesn't show up well on map, the size and color of the points can be adjusted
 
 
 
