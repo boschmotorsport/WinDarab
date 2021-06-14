@@ -1,13 +1,13 @@
 # XY-Plot
-- [XY-Plot](#xy-plot)
-    -[XY-Plot Settings](#xy-plot-settings)
-        -[Global Options Tab](#global-options-tab)
-        -[Display Tab](#display-tab)
-        -[Plot Edit Dialog](#plot-edit-dialog)
-    -[Components and Regression Lines](#components-and-regression-lines)
-    -[Working with the XY-Plot Window](#working-with-the-xy-plot-window)
-        -[Basic](#basic)
-    -[Plotting GPS with a Maps Background](#plotting-gps-with-a-maps-background)
+- [XY-Plot](#xy-plot)  
+    -[XY-Plot Settings](#xy-plot-settings)  
+        -[Global Options Tab](#global-options-tab)  
+        -[Display Tab](#display-tab)  
+        -[Plot Edit Dialog](#plot-edit-dialog)  
+    -[Components and Regression Lines](#components-and-regression-lines)  
+    -[Working with the XY-Plot Window](#working-with-the-xy-plot-window)  
+        -[Basic](#basic)  
+    -[Plotting GPS with a Maps Background](#plotting-gps-with-a-maps-background)  
 
 In a (x, y) graph coordinates are calculated for a pair of values (x, y) in two channels  (x- and y-axis).
 
@@ -38,7 +38,7 @@ For online files calculations are started automatically after changing the range
 
 A dialog box with settings appears automatically when you open the (x, y)-Plot Window for the first time. Closing the window will save the settings. The next time the window is opened this dialog will not appear again. Instead the saved settings will be loaded. 
 
-If you want to modify these settings or carry out a new calculation you can re-open the dialog box using the menu item __“Start/View Settings/ Edit”__ or by clicking __“Settings…”__ in the context menu.
+If you want to modify these settings or carry out a new calculation you can re-open the dialog box using the menu item __“Start/View Settings/ Edit”__ or by clicking __“Settings…”__ in the context menu.  
  ![XY Plot Settings](images/XY&#32;Plot&#32;-&#32;Settings.jpg)
 
 You can also press the __F5__ key to open the __“Settings”__ dialog box.
@@ -46,24 +46,24 @@ You can also press the __F5__ key to open the __“Settings”__ dialog box.
 
 ### Global Options Tab
 
-![Global Options](images/XY&#32;Plot&#32;-&#32;GlobalOptions.jpg)
+![Global Options](images/XY&#32;Plot&#32;-&#32;GlobalOptions.jpg)  
 In the global options tab are the options that are regarding all (x, y)-Plots or the window itself.
 
-#### Use jpg as background image
+#### Use jpg as Background Image
 
 If desired, you can activate this option and select a jpg-file that you want to have displayed in the Background. Zooming in on the (x, y)-Plot also zooms in on the Picture.
 
-#### Show grid  
+#### Show Grid  
 
 This option shows a grid in the background.
 
-#### Show info
+#### Show Info
 
 Shows the Offset and Gain of all the lines (regression lines and user lines) and the correlation of the regression lines.
 
 ### Display Tab
 
-This tab is used to show all the existing plots, to manage them as well as setting the data source and the condition, that is applies to the data from the data source. 
+This tab is used to show all the existing plots, to manage them as well as setting the data source and the condition, that is applies to the data from the data source.  
 ![Display Tab](images/XY&#32;Plot&#32;-&#32;Display.jpg)
 
 #### Data Source
@@ -136,7 +136,7 @@ You can also use predefined color scale settings by using the button on the righ
 
 You can select a predefined condition or write a new one directly into the field. The data is filtered by the condition before it is being analyzed by the (x, y)-Plot. 
 
-#### Cloud detection adn polynomial fitting
+#### Cloud detection and polynomial fitting
 
 In this section you can configure the regression lines, components and user lines.
 Select the sensitivity and the maximal component-count to regulate the outcome.
@@ -171,7 +171,7 @@ The picture will be __zoomed in__ by a factor of 2 so the cross dot will stay un
 To zoom in:
 * Double Click Left
 * __Context Menu/Zoom in__
-* Go to __Start/Display/Zoom in__
+* Go to __Start/Display/Zoom in__  
 ![Zoom In](images/Zoom&#32;In.jpg)
 
 #### Zoom out
@@ -179,14 +179,14 @@ The picture will be __zoomed out__ by a factor of 2 so the cross dot will stay u
 To zoom out:
 * Double Click Right
 * __Context Menu/Zoom out__
-* Go to __Start/Display/Zoom out__
+* Go to __Start/Display/Zoom out__  
 ![Zoom In](images/Zoom&#32;Out.jpg)
 
 #### Show All
 To show all dots:
 * Press __A__
 * __Context Menu/Show All__
-* Go to __Start/Display/Show All__
+* Go to __Start/Display/Show All__  
 ![Show All](images/Show&#32;All.jpg)
 
 #### Additional Elements
@@ -198,26 +198,26 @@ The InfoBox contains information about files and user lines. Information for eve
 To show info:
 * Press __i__
 * __Context Menu/ShowInfo__
-* Go to __Start/Display/Show polynomial coefficients__
+* Go to __Start/Display/Show polynomial coefficients__  
 ![Show Info](images/ShowInfo.jpg)
 
 ##### Show Color Scale
 Displays or hides the color scale for the selected (x,y) plot in the (x,y) window. This is only available in frequency or channel mode.
 To show scale:
 * Press the __s__
-* Go to __Start/Display/ShowScale__
+* Go to __Start/Display/ShowScale__  
 ![Show Scale](images/Show&#32;Scale.jpg)
 
 ##### Background Image
 Select and use an image for the background of your (x,y) plot.
 To use a background image:
-* Go to __Start/Background/Use Image__
+* Go to __Start/Background/Use Image__  
 ![Use Image](images/Use&#32;Image.jpg)
 
 ##### Transparency
 Shows/Hides the selected (x,y) plot __(press h)__. You can adjust the transparency of the (x,y) plot by clicking on the drop down button and change the slider position or by using hotkeys __(0-9)__ to set the transparency __(0% - 90%)__.
 To access the transparency slider:
-* Go to __Start/Visibility/Transparency__
+* Go to __Start/Visibility/Transparency__  
 ![Transparency](images/Transparency.jpg)
 
 ##### Components
@@ -231,7 +231,7 @@ Regression lines are calculated and they depend on calculated components. For ev
 To show the regression lines:
 * Press __Space__
 * __Context Menu/Regression Line__
-* Go to __start/Clouds and polynomial fitting/Fit polynom__
+* Go to __start/Clouds and polynomial fitting/Fit polynom__  
 ![Regression Line](images/Regression&#32;Line.jpg)
 
 ##### Show/Enable User Lines
@@ -239,7 +239,7 @@ User lines are free placeable lines that are inserted into a (x,y) plot by the u
 To show/enable user lines:
 * Press __u__
 * __Context Menu/User Lines__
-* Go to __Start_User Lines/Show__
+* Go to __Start_User Lines/Show__  
 ![Show User Lines](images/Show&#32;User-Lines.jpg)
 
 ##### Add User Lines
@@ -247,7 +247,7 @@ Adding a new user line is done by pressing Insert-key or “Insert line” from 
 To add a user line:
 * Press __insert__
 * __Context Menu/Insert Line__
-* Go to __Start/User Lines/Insert__
+* Go to __Start/User Lines/Insert__  
 ![Insert User Line](images/Insert&#32;User-Line.jpg)
 
 ##### Lines
@@ -258,8 +258,8 @@ You can delete the selected line and component.
 To delete a selected user line:
 * Press __delete__
 * __Context Menu/Remove Line__
-* Go to __Start/User Lines/Remove__
-![Delete User Line](images/Delet&#32;User-Line.jpg)
+* Go to __Start/User Lines/Remove__  
+![Delete User Line](images/Delete&#32;User-Line.jpg)
 
 ## Plotting GPS with a Maps Background
 
