@@ -7,7 +7,9 @@ This wiki is currently being created. If there is a specific section you would l
 
 The current release version of WinDarab is **[7.8.30](../releases)**.
 
-## Searching The Wiki
+## Searching The Wiki - Just Start Typing!
+
+We recommend you just start typing your question, let github do the rest!
 
 You can use the *GitHub* search bar above to search for concepts in the wiki.
 Make sure you select 'In This Repository'

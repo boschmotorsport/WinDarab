@@ -7,7 +7,7 @@ on:
       - 'wiki/**'
     branches:
       # And only on main branch
-      - main
+      - master
 
 jobs:
   build:
