@@ -158,7 +158,7 @@ Follow these steps to plot GPS data with a maps background:
         ![Add to Project](images/GoogleEarth-AddToProject.JPG)  
     7. Choose the name and project that you want to save the marker as, and click __Save__  
         ![Save](images/GoogleEarth-Save.jpg)  
-    8. Repeat steps _4._ through _7._ for the coordinates of the top rightmost point. Once completed, there should be two marks on the map, marking the location of the corners of the GPS data plot.
+    8. Repeat steps _iv._ through _vii._ for the coordinates of the top rightmost point. Once completed, there should be two marks on the map, marking the location of the corners of the GPS data plot.
         ![Marked Map](images/GoogleEarth-Marked.JPG)  
     9. If needed, press the 2D icon, as well as the compass icon in the bottom right of the screen to make a straight, top-down view.  
         ![2D View](images/GoogleEarth-2D.JPG)  
@@ -166,7 +166,7 @@ Follow these steps to plot GPS data with a maps background:
         ![2D View](images/GoogleEarth-MapStyle.jpg)  
     and then choose Clean for the map style  
       ![Clean Style](images/GoogleEarth-Clean.jpg)  
-    11. Use the windows _Snipping Tool_ to take a screen capture from one marker to the other, and save the capture as a jpeg
+    11. Use the Windows _Snipping Tool_ to take a screen capture from one marker to the other, and save the capture as a jpeg
       ![Screen Capture](images/GoogleEarth-Capture.JPG)  
 4.  In the WinDarab GPS data plot, set the capture of the map as the background
       ![GPS Map](images/GPSMap.JPG)  
