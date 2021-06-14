@@ -20,7 +20,7 @@ In addition each (x, y)-Plot can be used to separate the clouds in components an
 ![Basic XY Plot](images/XY&#32;Plot&#32;-&#32;Basic.jpg)
 
 __Open x/y plot__
-Drag __"Start/Worksheet controls/x-y-plot"__ into your workspace to open the (x, y)-Plot Window.
+Drag __"Start/Worksheet controls/x-y-plot"__ into your workspace to open the (x, y)-Plot Window.  
 ![Add XY Plot](images/XY&#32;Plot&#32;-&#32;Add.jpg)
 
 __Middle Mouse Click (Left Button + Right Button)__
@@ -264,11 +264,40 @@ To delete a selected user line:
 ## Plotting GPS with a Maps Background
 
 GPS data can be plotted, with a maps background, using an XY plot.
-Follow these steps to plot GPS data with a maps background:
-1. Create a new XY Plot
-2. Create a new plot
-  a. Select the data file with the gps data for the Overlay
-  b. Select the longitude GPS data channel for the X-Axis
-  c. Select the Latitude GPS data channel for the Y-Axis
-![GPS Plot](images/GPSPlot.jpg)
+|Follow these steps to plot GPS data with a maps background:
+1. Open a new XY Plot
+2. Plot the GPS data
+    1. Select the data file with the gps data for the Overlay  
+    2. Select the longitude GPS data channel for the X-Axis  
+    3. Select the Latitude GPS data channel for the Y-Axis  
+![GPS Plot](images/GPSPlot.jpg)  
+3. Screen capture a map of the track  
+    Here is a possible method for obtaining the screen capture:  
+    1. Zoom all of the way out on the plot of the GPS data in WinDarab  
+    2. Note the range of the both axes (more specifically, note the coordinates of the bottom leftmost point and the coordinates of the upper rightmost point)  
+    3. Open Google Earth on a Web Browser
+    4. Open the search box (press the magnifying glass on the left side of the screen)  
+        ![Search Box](images/GoogleEarth-Search.jpg)  
+    5. Enter the coordinates of the bottom leftmost point in the search bar  
+        ![Search Coordinates](images/GoogleEarth-Coordinates.jpg)  
+    6. Click __Add to project__ in the pop-up to save the mark  
+        ![Add to Project](images/GoogleEarth-AddToProject.jpg)  
+    7. Choose the name and project that you want to save the marker as, and click __Save__  
+        ![Save](images/GoogleEarth-Save.jpg)  
+    8. Repeat steps _4._ through _7._ for the coordinates of the top rightmost point. Once completed, there should be two marks on the map, marking the location of the corners of the GPS data plot.
+        ![Marked Map](images/GoogleEarth-Marked.jpg)  
+    9. If needed, press the 2D icon, as well as the compass icon in the bottom right of the screen to make a straight, top-down view.  
+        ![2D View](images/GoogleEarth-2D.jpg)  
+    10. If there are other locations/businesses marked in the view, click on the map style icon on the left side of the screen  
+        ![2D View](images/GoogleEarth-MapStyle.jpg)  
+    and then choose Clean for the map style  
+      ![Clean Style](images/GoogleEarth-Clean.jpg)  
+    11. Use the windows _Snipping Tool_ to take a screen capture from one marker to the other, and save the capture as a jpeg
+      ![Screen Capture](images/GoogleEarth-Capture.jpg)  
+4.  In the WinDarab GPS data plot, set the capture of the map as the [background](#background-image)  
+      ![GPS Map](images/GPSMap.jpg)  
+    Note: If the GPS data doesn't show up well on map, the [size and color](#appearance) of the points can be adjusted
+
+
+
 
