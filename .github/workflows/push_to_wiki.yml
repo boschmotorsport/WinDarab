@@ -6,8 +6,8 @@ on:
       # Trigger only when wiki directory changes
       - 'wiki/**'
     branches:
-      # And only on master branch
-      - master
+      # And only on main branch
+      - main
 
 jobs:
   build:
@@ -17,8 +17,6 @@ jobs:
       - uses: actions/checkout@v1
       # Additional steps to generate documentation in "Documentation" directory
       - name: Upload Documentation to Wiki
-        uses: SwiftDocOrg/github-wiki-publish-action@v1
-        with:
-          path: "wiki"
+        uses: eohlde/push_to_wiki@v0
         env:
           GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
