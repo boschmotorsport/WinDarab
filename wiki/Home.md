@@ -9,7 +9,7 @@ The current release version of WinDarab is **[7.8.30](../releases)**.
 
 ## Searching The Wiki - Just Start Typing!
 
-We recommend you just start typing your question, let github do the rest!
+We recommend you press the 'S' key (for search), then just start typing your question, let github do the rest!
 
 You can use the *GitHub* search bar above to search for concepts in the wiki.
 Make sure you select 'In This Repository'
