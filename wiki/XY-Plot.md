@@ -1,13 +1,16 @@
 # XY-Plot
-- [XY-Plot](#xy-plot)  
-    - [XY-Plot Settings](#xy-plot-settings)  
-        - [Global Options Tab](#global-options-tab)  
-        - [Display Tab](#display-tab)  
-        - [Plot Edit Dialog](#plot-edit-dialog)  
-    - [Components and Regression Lines](#components-and-regression-lines)  
-    - [Working with the XY-Plot Window](#working-with-the-xy-plot-window)  
-        - [Basic](#basic)  
-    - [Plotting GPS with a Maps Background](#plotting-gps-with-a-maps-background)  
+
+- [XY-Plot](#xy-plot)
+  - [XY-Plot Settings](#xy-plot-settings)
+    - [Global Options Tab](#global-options-tab)
+    - [Display Tab](#display-tab)
+    - [Plot Edit Dialog](#plot-edit-dialog)
+  - [Components and Regression Lines](#components-and-regression-lines)
+  - [Working with the XY-Plot Window](#working-with-the-xy-plot-window)
+    - [Basic](#basic)
+      - [Additional Elements](#additional-elements)
+        - [Lines](#lines)
+  - [Plotting GPS with a Maps Background](#plotting-gps-with-a-maps-background)
 
 In a (x, y) graph coordinates are calculated for a pair of values (x, y) in two channels  (x- and y-axis).
 
@@ -33,16 +36,14 @@ Because calculations can take much time especially if the range is above the who
 
 For online files calculations are started automatically after changing the range (new samples have been received) and the view will be updated too. The cross will be moved to the last drawn dot.
 
-
 ## XY-Plot Settings
 
-A dialog box with settings appears automatically when you open the (x, y)-Plot Window for the first time. Closing the window will save the settings. The next time the window is opened this dialog will not appear again. Instead the saved settings will be loaded. 
+A dialog box with settings appears automatically when you open the (x, y)-Plot Window for the first time. Closing the window will save the settings. The next time the window is opened this dialog will not appear again. Instead the saved settings will be loaded.
 
 If you want to modify these settings or carry out a new calculation you can re-open the dialog box using the menu item __“Start/View Settings/ Edit”__ or by clicking __“Settings…”__ in the context menu.  
  ![XY Plot Settings](images/XY&#32;Plot&#32;-&#32;Settings.jpg)
 
 You can also press the __F5__ key to open the __“Settings”__ dialog box.
-
 
 ### Global Options Tab
 
@@ -70,7 +71,7 @@ If two or more plots have the same x- or y-axis the topmost plot defines the sho
 
 ### Plot Edit Dialog
 
-This dialog is shown when you mark an existing (x, y)-Plot and press Modify or by adding a new (x, y)-Plot to the list (Add-Button), or duplicating an existing one (in the Display Tab). 
+This dialog is shown when you mark an existing (x, y)-Plot and press Modify or by adding a new (x, y)-Plot to the list (Add-Button), or duplicating an existing one (in the Display Tab).
 
 ![Plot Edit Dialog](images/XY&#32;Plot&#32;-&#32;PlotEdit.jpg)
 
@@ -89,7 +90,7 @@ The plot itself is only created after pressing OK.
 
 ## Components and Regression Lines
 
-Components are calculated based on the (x, y)-Plot data to find and visualize connected data samples. 
+Components are calculated based on the (x, y)-Plot data to find and visualize connected data samples.
 To analyze the data, the (x, y)-Plot is divided into a grid. First, the field containing the most samples is set as a starting field of a component. Starting from this field, the surrounding fields are analyzed. If a surrounding field contains more samples than a given threshold, the field is added to the component. Now the surrounding fields of the enlarged component are analyzed and maybe added. This step is repeated until there is no surrounding field with a high enough sample count to add to the component.  
 Now the next field with the highest sample count outside a previously found component is chosen to start a new component. A new component is being built from this. These steps are repeated until the last component is found.  
 The higher the sensitivity is set, the finer the grid will be. Also the sample count threshold rises with the sensitivity.  
@@ -129,6 +130,7 @@ There are components, regression lines, user lines and an InfoBox with the infor
 |Add User Lines|Adding a new user line is done by pressing Insert-key or “Insert line” from the menu. To add a user line, user lines must be showing. The inserted line is going through the (0, 0) and the cross point. A user line can be dragged using two small rectangles on the line. <br>To add a user line:<ul><li>Press __insert__</li><li>__Context Menu/Insert Line__</li><li>Go to __Start/User Lines/Insert__</li></ul>![Insert User Line](images/Insert&#32;User-Line.jpg)|
 
 ##### Lines
+
 If the mouse cursor is near a line then the equation of the line will be shown in a small window. The information about the lines can be seen also in the InfoBox. You can select a line by clicking near to the line or by clicking in the InfoBox on some row with line information. If the line belongs to the component the component will be selected too.
 
 |||
@@ -139,6 +141,7 @@ If the mouse cursor is near a line then the equation of the line will be shown i
 
 GPS data can be plotted, with a maps background, using an XY plot.
 Follow these steps to plot GPS data with a maps background:
+
 1. Open a new XY Plot
 2. Plot the GPS data
     1. Select the data file with the gps data for the Overlay  
@@ -168,10 +171,6 @@ Follow these steps to plot GPS data with a maps background:
       ![Clean Style](images/GoogleEarth-Clean.jpg)  
     11. Use the Windows _Snipping Tool_ to take a screen capture from one marker to the other, and save the capture as a jpeg
       ![Screen Capture](images/GoogleEarth-Capture.JPG)  
-4.  In the WinDarab GPS data plot, set the capture of the map as the background
+4. In the WinDarab GPS data plot, set the capture of the map as the background
       ![GPS Map](images/GPSMap.JPG)  
     Note: If the GPS data doesn't show up well on map, the size and color of the points can be adjusted
-
-
-
-
