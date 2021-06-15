@@ -16,4 +16,4 @@ Make sure you select 'In This Repository'
 
 <p align="center">
 <img src="images/Search The Wiki.png">
-</p>|
+</p>
