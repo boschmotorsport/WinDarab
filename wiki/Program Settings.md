@@ -9,6 +9,7 @@
   - [Files and Folders](#files-and-folders)
     - [Folder Monitoring](#folder-monitoring)
     - [Lap Distance Normalization](#lap-distance-normalization)
+      - [Normalization Calculation](#normalization-calculation)
       - [DIST Flag](#dist-flag)
     - [Data Compression](#data-compression)
   - [Miscellaneous](#miscellaneous)
@@ -101,6 +102,19 @@ WinDarab will, by default, try to normalize the distance of each lap to the curr
 - If you don't want the normalization to occur: select **Never**
 - If you want each and every lap (in/out included) to be normalized: select **Always**
 - If you want a definable deviation: enter it (5% is default)
+
+#### Normalization Calculation
+
+The normalization calculation is a scalar value multiplied by the logged/calculated value of unnormalized lapdistance.
+
+Pseudo code to demonstrate normalization
+
+```
+scalar = selected_racetrack_length / current_lap_length
+lapdist = current_lap_lapdist * scalar
+```
+
+More advanced algorithms can be employed using the COM-API
 
 #### DIST Flag
 
