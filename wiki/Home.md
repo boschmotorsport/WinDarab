@@ -5,7 +5,7 @@ This wiki is currently being created. If there is a specific section you would l
 - [Erich.Ohlde@us.bosch.com](mailto:erich.ohlde@us.bosch.com)
 - [Maxwell.Houck@us.bosch.com](mailto:maxwell.houck@us.bosch.com)
 
-The current release version of WinDarab is **[7.8.30](../releases)**.
+The current release version of WinDarab is **[7.8.34](../releases)**.
 
 ## Searching The Wiki - Just Start Typing!
 
