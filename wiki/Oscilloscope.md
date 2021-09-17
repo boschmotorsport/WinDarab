@@ -6,6 +6,8 @@
   - [Automatic Y Axis](#automatic-y-axis)
   - [Auto-align Telemetry and Logged Data](#auto-align-telemetry-and-logged-data)
   - [Show Extremas](#show-extremas)
+  - [File Events](#file-events)
+    - [Interacting with File Events](#interacting-with-file-events)
 
 ## X Axis
 
@@ -75,3 +77,15 @@ From here you can control:
 <p align="center">
 <img src="images/Show Extremas Example.jpg">
 </p>
+
+## File Events
+
+At the bottom of each oscilloscope there can be a collection of 'orbs', colored by overlay and event definition. These are time/distance markers for defined file events.
+
+![File Event](images/Oscilloscope%20-%20File%20Event.jpg)
+
+### Interacting with File Events
+
+Left clicking on one of the events, the x-axis cursor will jump to the time/distance that the event occured.
+
+Ctrl + N/P keys will jump to the (N)ext or (P)revious event relative to the current x-axis cursor position.

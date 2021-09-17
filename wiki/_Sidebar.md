@@ -21,6 +21,7 @@
 - Advanced Use-Cases
   - [Alias Channels](Alias%20Channels)
   - [Setupsheets](Setupsheets)
+  - [File Events](File%20Events)
   - [Data Comparison](Comparing%20Overlays)
   - [Special Channels](Special%20Channels)
   - [Pre-Configuring WinDarab](PreConfiguration)

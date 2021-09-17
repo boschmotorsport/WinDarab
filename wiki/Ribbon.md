@@ -147,7 +147,7 @@ WinDarab manages the following dockable windows:
 * Racetrack – see chapter Racetrack
 * Events (old) – see chapter Events &larr; _this will be depracated/removed in future version_
 * Events
-* Event Rules
+* [Event Rules](File%20Events)
 
 ##### Racetrack
 Click with the left mouse button on **Windows &rarr; Dockable &rarr; Racetrack** to open a Racetrack window.
