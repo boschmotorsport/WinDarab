@@ -8,6 +8,7 @@
   - [Show Extremas](#show-extremas)
   - [File Events](#file-events)
     - [Interacting with File Events](#interacting-with-file-events)
+    - [Manual File Events](#manual-file-events)
 
 ## X Axis
 
@@ -89,3 +90,19 @@ At the bottom of each oscilloscope there can be a collection of 'orbs', colored 
 Left clicking on one of the events, the x-axis cursor will jump to the time/distance that the event occured.
 
 Ctrl + N/P keys will jump to the (N)ext or (P)revious event relative to the current x-axis cursor position.
+
+### Manual File Events
+
+Events can be manually added to a file.
+
+A common use of this feature is to note a point in the data for further review.
+
+To use this feature:
+
+1. Place the cursor at the x-axis location of interest
+2. Press the **INSERT** key
+3. Select *'User Event* on the context menu <BR>![Context Menu Entry](images/Oscilloscope%20-%20User%20Event%20Insertion.png)
+4. Define the event information (Name, Category) and provide a Comment/Description of the event <BR>![Event Definition](images/Oscilloscope%20-%20User%20Event%20Definition.png)
+
+This event will show up in the *Event Window* now
+![User Event in Event Window](images/Oscilloscope%20-%20User%20Event%20Example.png)
